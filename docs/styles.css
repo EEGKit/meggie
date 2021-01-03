@@ -1,0 +1,18 @@
+img {
+    max-width:100%;
+    max-height:100%;
+    height: auto;
+}
+
+body {background-color: #add8e6;}
+
+ol {
+    counter-reset: item;
+}
+li {
+    display: block;
+}
+li::before {
+    content: counters(item, ".")". ";
+    counter-increment: item;
+}
