@@ -6,13 +6,23 @@ img {
 
 body {background-color: #add8e6;}
 
-ol {
+.codelisting {
+    background-color: #a0a0a0;
+}
+.codelisting ul {
+    list-style-type: none;
+}
+.codelisting li {
+    list-style-type: none;
+}
+
+.table_of_contents ol {
     counter-reset: item;
 }
-li {
+.table_of_contents li {
     display: block;
 }
-li::before {
+.table_of_contents li::before {
     content: counters(item, ".")". ";
     counter-increment: item;
 }

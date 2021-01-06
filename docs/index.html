@@ -15,12 +15,15 @@
   
 <div class="container">
 
-<h1>Welcome to Meggie's documentation</h1>
+<h1>Welcome to Meggie 1.0.0 documentation </h1>
 
 <div class="table_of_contents">
 <ol>
   <li>
     <a href="#introduction">Introduction</a>
+  </li>
+  <li>
+    <a href="#installation">Installation</a>
   </li>
   <li>
     <a href="#features">Features</a>
@@ -45,6 +48,9 @@
       <li>
         <a href="#multisubject">Simple multi-subject analysis with EEG resting state data</a>
       </li>
+      <li>
+        <a href="#simpleplugin">Creating the simplest possible plugin</a>
+      </li>
     </ol>
   </li>
 </ol>
@@ -52,39 +58,41 @@
 
 <div id="introduction">
   <h2>Introduction</h2>
-  Meggie is an open source software for running MEG and EEG analysis with easy-to-use graphical user interface. It is written in Python and uses MNE-python library under the hood to do heavy lifting. The project was started in XXXX in University of Jyväskylä and has been used in-house since the early days, but has been released to public only lately. <br><br>
+  <p>Meggie is an open source software for running MEG and EEG analysis with easy-to-use graphical user interface. It is written in Python 3 and uses MNE-python library under the hood to do heavy lifting. The project was started in XXXX in University of Jyväskylä and has been used in-house since the early days, but has been released to public only lately. </p>
 
-  There are other software that can be used for M/EEG analysis. Most popular at the time of writing seem to be Fieldtrip based on Matlab language, and MNE-python based on python language. Both of these software have a great variety of analysis methods to offer and are most often used by user writing a python/matlab script in which the functions provided by the packages are called. This way user can give the raw data measured with M/EEG devices to the script, script runs a series of analysis steps, perhaps including preprocessing, epoching, averaging, and plotting, and then outputs the result. <br> <br>
+  <p>There are other software that can be used for M/EEG analysis. Most popular at the time of writing seem to be Fieldtrip based on Matlab language, and MNE-python based on python language. Both of these software have a great variety of analysis methods to offer and are most often used by user writing a python/matlab script in which the functions provided by the packages are called. This way user can give the raw data measured with M/EEG devices to the script, script runs a series of analysis steps, perhaps including preprocessing, epoching, averaging, and plotting, and then outputs the result. </p>
 
-  This is not always easy for researcher not familiar with programming. To mention one other matlab package, EEGLab, which made the usage easy. Community moving the python, only EEG? <br><br>
+  <p>This is not always easy for researcher not familiar with programming. To mention one other matlab package, EEGLab, which made the usage easy. Community moving the python, only EEG? </p>
 
-  There is also mnelab which is also based on mne-python. Meggie is not designed to compete with mnelab, which seems to work a bit like ...elekta?, that is, it is great for inspecting data for single subjects, but not necessarily for running multiple subsequent steps of analysis in a experiment with tens of subjects. <br><br>
+  <p>There is also mnelab which is also based on mne-python. Meggie is not designed to compete with mnelab, which seems to work a bit like ...elekta?, that is, it is great for inspecting data for single subjects, but not necessarily for running multiple subsequent steps of analysis in a experiment with tens of subjects. </p>
 
-  And that is what Meggie is designed to do in very easy-to-use way, with great extendability as in EEGLab.
-  <figure>
-    <img src="images/mainwindow_empty.png" alt="Main window view">
-    <figcaption>Fig 1. A view of the main window when starting Meggie first time. </figcaption>
-  </figure>
+  <p>And that is what Meggie is designed to do in very easy-to-use way, with great extendability as in EEGLab.</p>
+  <img src="images/mainwindow_empty.png">
+</div>
+
+<div id="installation">
+  <h2>Installation</h2>
+  <p>Installation happens..</p>
 </div>
 
 <div id="features">
   <h2>Features</h2>
-  Some of the basic features of Meggie are explained below.
+  <p>Some of the basic features of Meggie are explained below.</p>
   <div id="overview">
     <h3>Overview</h3>
-    Overview.. here put a picture with red rectangles and med eeg subjects loaded.
+    <p>Overview.. here put a picture with red rectangles and med eeg subjects loaded.</p>
   </div>
   <div id="analysis">
     <h3>Analysis</h3>
-    Data import, preprocessing (all steps), spectrums, epochs, evoked, TFR's, output as plots and csv's. Pictures?
+    <p>Data import, preprocessing (all steps), spectrums, epochs, evoked, TFR's, output as plots and csv's. Pictures?</p>
   </div>
   <div id="batching">
     <h3>Batching</h3>
-    Most of the actions (that do not need require supervision) can be run simulatenously for multiple subjects.
+    <p>Most of the actions (that do not need require supervision) can be run simulatenously for multiple subjects.</p>
   </div>
   <div id="plugins">
     <h3>Plugins</h3>
-    The core functionality is carefully designed and tested. However, it there are great avenues to where extend. Meggie includes a very simple to use plugin architecture.
+    <p>The core functionality is carefully designed and tested. However, it there are great avenues to where extend. Meggie includes a very simple to use plugin architecture.</p>
   </div>
 </div>
 
@@ -92,10 +100,208 @@
   <h2>Tutorials</h2>
   <div id="multisubject">
     <h3> Simple multi-subject analysis with EEG resting state data</h3>
-    We start by...
+    <p>In this tutorial, we use 180 second long resting state EEG datasets, with first 90 seconds eyes open and last 90 seconds eyes closed, from 28 subjects, to compare spectral difference between eyes open and eyes closed conditions. The dataset is not available for public, but the tutorial should still make the principles clear.</p>
+
+    <p>Start by selecting "Create new Experiment" under "File" menu. </p>
+    <img src="images/tutorial_01_01_create_experiment.png"> 
+    <p>Fill experiment details, here we use "EOEC" for experiment name, and "Internet" for author, and then click "Ok." </p>
+    <img src="images/tutorial_01_02_fill_experiment_details.png"> 
+    <p>To add the datasets (we are gonna call them subjects from now on), click "Add new..." </p>
+    <img src="images/tutorial_01_03_add_subjects.png">
+    <p>Then click "Browse..", and select the files. You can add them all at once, or one at a time. If one at a time, then use "Browse.." again until all paths are in the list.</p>
+    <img src="images/tutorial_01_04_add_subjects_browse.png">
+    <p>Then click "Ok."</p>
+    <img src="images/tutorial_01_05_add_subjects_ok.png">
+    <p>Next, select the name of the first (or some other) subject, and click "Activate selected."</p>
+    <img src="images/tutorial_01_06_activate_subject.png"> 
+    <p>Some information about the subject appears on the "Measurement info" box on the right. We are going to filter the data from 1Hz to 40Hz, resample it to 100Hz and set a standard montage. Standard montage is set because, in this case, the raw files do not contain channel location information. We need the channel location information because we are going to compute channel averages. Select "Filter."</p>
+    <img src="images/tutorial_01_07_filter.png"> 
+    <p>We use the default settings. However, we will use the batch processing option to filter all the subjects in one go. Select "Batch processing." </p>
+    <img src="images/tutorial_01_08_filter_batch.png"> 
+    <p>Click "Select all."</p>
+    <img src="images/tutorial_01_09_filter_batch_selectall.png"> 
+    <p>And click "Batch."</p>
+    <img src="images/tutorial_01_10_filter_batch_apply.png"> 
+    <p>In the measurement info box, you can now see the "Highpass" and "Lowpass" elements to have changed to new values. Next, click "Resample."</p>
+    <img src="images/tutorial_01_11_resample.png"> 
+    <p>Again, use defaults, and select "Batch processing."</p>
+    <img src="images/tutorial_01_12_resample_batch.png"> 
+    <p>Click "Select all."</p>
+    <img src="images/tutorial_01_13_resample_batch_selectall.png"> 
+    <p>And click "Batch."</p>
+    <img src="images/tutorial_01_14_resample_batch_apply.png"> 
+    <p>"Sampling rate" in the measurement info box has updated. Next click "Set EEG montage."</p>
+    <img src="images/tutorial_01_15_montage.png"> 
+    <p>The list has many good options for montages (the ones shipped with mne-python), and often one can just use one of them. However, with the cap we had, none of the montages in the list was quite right. Thus we had to use a custom montage file</p>
+    <img src="images/tutorial_01_16_montage_select.png"> 
+    <p>Once again, select "Batch processing."</p>
+    <img src="images/tutorial_01_17_montage_batch.png"> 
+    <p>Click "Select all."</p>
+    <img src="images/tutorial_01_18_montage_batch_selectall.png"> 
+    <p>And click "Batch."</p>
+    <img src="images/tutorial_01_19_montage_batch_apply.png"> 
+    <p>Our purpose is to create a power spectral density of the eyes open and eyes closed conditions, and have them overlayed in a plot. Thus, we move to the "Spectrums" tab, by clicking on it.</p>
+    <img src="images/tutorial_01_20_spectrums_tab.png"> 
+    <p>Click "Create spectrum."</p>
+    <img src="images/tutorial_01_21_spectrums_create.png">
+    <p>We will use the default settings for naming and window sizes. However, we need to tell the spectrum computation the location of eyes open and eyes closed conditions. As the length of recording is almost the same (180s) for each subjects, we could use static time intervals (using "Add to list"). However, in real life, the lengths can be quite variable, and we will show the dynamic way. Click "Add advanced.."</p>
+    <img src="images/tutorial_01_22_spectrums_add_advanced_1.png"> 
+    <p>We will use average group "1" for eyes open condition. Select "Use start of recording" and set offset to be "20s" in the "Starting points" (higher) box. Then select "Use start of recording" and set offset to "70s" in the "Ending points" (lower) box. This way can we set an interval relative to some point (this time it is the beginning of the recording, and we would have gotten identical results by using the static time interval.) Click "Add."</p>
+    <img src="images/tutorial_01_23_spectrums_add_advanced_1_settings.png"> 
+    <p>Dynamic interval has appeared in the box of time intervals. Click "Add advanced.." again.</p>
+    <img src="images/tutorial_01_24_spectrums_add_advanced_2.png"> 
+    <p>This time, set average group to "2" as we are adding interval for the eyes closed condition. Select "Use end of recording" with "-70s" offset for "Starting points" and select "Use end of recording" with "-20s" offset for "Ending points." This interval will be relative to the end of recording, and could not have been added using the static intervals. Click "Add."</p>
+    <img src="images/tutorial_01_25_spectrums_add_advanced_2_settings.png"> 
+    <p>The list now has two items, the first describing the location of the eyes open condition, and the second describing the location of the eyes closed condition. The idea for 20s and 70s is to avoid the edges of the recording and the transition between conditions. Next, select "Batch processing" to create the spectrums for every subject in one go.</p>
+    <img src="images/tutorial_01_26_spectrums_batch.png"> 
+    <p>Click "Select all."</p>
+    <img src="images/tutorial_01_27_spectrums_batch_selectall.png"> 
+    <p>Click "Batch."</p>
+    <img src="images/tutorial_01_28_spectrums_batch_apply.png"> 
+    <p>As we see, an item named "Spectrum" has appeared in the Spectrum box. Select it by clicking</p>
+    <img src="images/tutorial_01_29_spectrum_select.png"> 
+    <p>Some information on the spectrum will appear in the "Spectrum info" box. As it was created using batching, similar item with same name (but different data) is now present for other subjects too and could be seen by activating other subject. Next, however, we are going to average over all these spectrum items present in all subjects. Select "Average spectrum over subjects.</p>
+    <img src="images/tutorial_01_30_spectrum_groupaverage.png"> 
+    <p>We will use the default settings. Checkboxes indicate which subjects to include in the group average, and the numbers allow to separate them into different groups. We want to select all of them, and want all of them in the same group, so just click "Accept."</p>
+    <img src="images/tutorial_01_31_spectrum_groupaverage_apply.png"> 
+    <p>Next, we are going to visualize the results. Select "group_Spectrum" from the "Spectrum" box by clicking.</p>
+    <img src="images/tutorial_01_32_spectrum_select_groupaverage.png"> 
+    <p>Information on the item appears on the "Spectrum info" box. In contrast to the "Spectrum" item, which is present for all subjects, "group_Spectrum" item is, even though it is based on the data from all subjects, only stored under the active subject. Click "Plot spectrum.</p>
+    <img src="images/tutorial_01_33_spectrum_plotspectrum.png"> 
+    <p>Select "Channel averages". By default, channel averages use standard groups of channels from mne-python, that is, "Left-frontal", "Right-frontal", "Left-occipital", "Right-occipital", "Left-parietal", "Right-parietal", "Left-temporal" and "Right-temporal." The standard groups are computed using the channel locations, and that is why it was necessary to set the montages. One can also create custom groups of channels by clicking "Channel groups.." in the left panel of main window just under the "Name" and "Author" fields.</p>
+    <img src="images/tutorial_01_34_spectrum_plotspectrum_select_channelaverages.png"> 
+    <p>Then click "Accept."</p>
+    <img src="images/tutorial_01_35_spectrum_plotspectrum_apply.png"> 
+    <p>An matplotlib figure is created and shown containing all the channel averages. So, for example, the bottom left one shows an average over all subjects and all channels grouped under "Left-occipital" name. We note that in this case, the occipital alpha around 10Hz is much higher in the eyes closed condition ("2_group_1", first number being the number selected when creating the spectrums and the second number being the number selected when averaging over subjects)) than the eyes open condition ("1_group_1"). You can close the figure.</p>
+    <img src="images/tutorial_01_36_spectrum_matplotlib_image.png"> 
+    <p>To finish, let us save the data for statistical analysis. Select the "Spectrum" item again, as we will want to save the data as it was before averaging over subjects, to, for example, do a standard t-test over subjects.</p>
+    <img src="images/tutorial_01_37_spectrum_select_subjectspectrum.png"> 
+    <p>And click "Save spectrum to csv."</p>
+    <img src="images/tutorial_01_38_spectrum_savespectrum.png"> 
+    <p>This time, keep "All channels selected" and click "Accept.". This will create one big csv file containing spectrums of all conditions and all channels and all subjects (spectrum items with the same name are looked under each subject).</p>
+    <img src="images/tutorial_01_39_spectrum_savespectrum_apply.png"> 
+    <p>The file is stored under experiment folder. The exact path is also printed to the console at the bottom of the screen.</p>
+    <img src="images/tutorial_01_40_spectrum_path.png"> 
+    <p>The file opened using a standard spreadsheet program.</p>
+    <img src="images/tutorial_01_41_spectrum_csv.png"> 
+    <p>That is all for this small tutorial. We wish that the basic idea of Meggie, which is that you can add many datasets, and then run a sequence of actions, in this case, filtering, resampling, setting montage and computing a spectrum for all of them, has become clear, and feels intuitive.</p>
+  </div>
+  <div id="simpleplugin">
+    <h3>Creating the simplest possible plugin</h3>
+    <p>Creating a plugin for Meggie is simple. You need to create a python package with a specific type of name (meggie_*) and some minimal boilerplate, and it will be automatically searched and used by Meggie. The code for this example can be found from https://github.com/Teekuningas/meggie_simpleplugin. </p>
+    <p>To create such a package, you want to have a directory with this kind of contents:</p>
+    <div class="codelisting">
+      <ul>
+			  <li> MANIFEST.in </li>
+			  <li> setup.py </li>
+        <li> meggie_simpleplugin
+          <ul>
+            <li> configuration.json </li>
+            <li> __init__.py </li>
+            <li> tabs
+              <ul>
+                <li> __init__.py </li>
+                <li> simpleplugin
+                  <ul>
+                    <li> configuration.json </li>
+                    <li> __init__.py </li>
+                    <li> ui.py </li>
+                  </ul>
+                </li> 
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <p>"MANIFEST.in" and "setup.py" are standard files in python packaging. "MANIFEST.in" lists what files inside the subdirectories should be included and what should be excluded when installing the package. "setup.py" contains the installation script with some metadata and flags. For us, most trivial ones should be fine. </p>
+    <p>MANIFEST.in: </p>
+    <div class="codelisting">
+      <ul>
+        <li> recursive-include meggie_simpleplugin * </li>
+        <li> global-exclude *.py[co] </li>
+        <li> global-exclude __pycache__ </li>
+      </ul>
+    </div>
+    <p>setup.py: </p>
+    <div class ="codelisting">
+      <ul>
+        <li>from setuptools import setup </li>
+        <li>setup(
+          <ul>
+            <li>name='meggie_simpleplugin',</li>
+            <li>version='0.1.0',</li>
+            <li>license='BSD',</li>
+            <li>packages=['meggie_simpleplugin'], </li>
+            <li>include_package_data=True, </li>
+            <li>zip_safe=False, </li>
+            <li>install_requires=['setuptools'] </li>
+          </ul>
+        </li>
+        <li>)</li>
+      </ul>
+    </div>
+    <p> So the folder "meggie_simpleplugin" with all its non-binary files is what is going to get installed when someone finally runs "python setup.py install". The "configuration.json" file inside the "meggie_simpleplugin" is read by Meggie, and should contain name and description of the plugin. It can also contain tab presets, which are collections of tabs describing pipelines and, if introduced here, will appear in the preferences dialog in Meggie. Here, however, is the minimum code for "configuration.json":</p>
+    <div class="codelisting">
+      <ul>
+        <li> {
+          <ul>
+            <li> "name": "meggie_simpleplugin",
+            <li> "description": "The most simple possible meggie plugin"
+          </ul>
+        </li>
+        <li> } </li>
+      </ul>
+    </div>
+    <p> Just to quickly note, the __init__.py files are marking folders to be python packages. In our case, they must be present but are empty. Already, with this previous "configuration.json" file, Meggie would find the plugin, but could not do anything with it. To add some functionality, we include a "tabs" folder. Naming here is important; Meggie will look for folder "tabs" and "datatypes" inside the package folder. In this example, we will create a tab similar to "Preprocessing", "Spectrums", and so on, present in core Meggie, and name it "Simple plugin". And so, inside the "tabs" folder, we have folder named "simpleplugin". Inside it, we need to have two files. "configuration.json" specifies unique id of the tab and the visually shown name of the tab, but also specifies what should be put inside the tab, that is, what buttons, what boxes, and so on. The "ui.py" file then will contain the implementations of those things specified in the "configuration.json". This division into what and how gives Meggie a nice unified look. We will make a simple tab with a "Hello" button, which when clicked, will open a messagebox saying hello to the active subject. Here is the "configuration.json":</p>
+    <div class="codelisting">
+      <ul>
+        <li> { 
+          <ul>
+            <li> "id": "simpleplugin", </li>
+            <li> "name": "Simple plugin", </li>
+            <li> "actions": ["hello"] </li>
+          </ul>
+        </li>
+        <li> } </li>
+      <ul>
+    </div>
+    <p> It specifies an action called "hello". There will now be a "Simple plugin" tab and a button with text "Hello" and, if clicked, Meggie will try to execute function called "hello" inside "ui.py". Let's add that: </p>
+    <div class="codelisting">
+      <ul>
+        <li> from meggie.utilities.messaging import messagebox </li>
+        <li> def hello(experiment, data, window):
+          <ul>
+            <li> """ Helloes the active subject. </li>
+            <li> """ </li>
+            <li> message = 'Hello {}!'.format(experiment.active_subject.name) </li>
+            <li> messagebox(window, message)
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <p>The function takes three arguments. "experiment" is a instance of Experiment object, containing metadata, and all the subjects, and with them, almost everything. "data" contains possible selections from the input boxes inside the tab. We don't have any of them now. "window" is instance of the main window, a PyQt object. We use a meggie utility called messagebox to show the message about active subject. Of course, now it is python, and you have the power. That is it, we are finished. To test it, install the package with "python setup.py install", start meggie, and open "Preferences.."</p>
+    <img src="images/tutorial_02_01_open_preferences.png"> 
+    <p> Then select "Custom" </p>
+    <img src="images/tutorial_02_02_select_custom.png"> 
+    <p> Then click "Specify" </p>
+    <img src="images/tutorial_02_03_specify.png"> 
+    <p> Select tabs you want include by clicking the names in order. We will select all of them. Then click "Apply."</p>
+    <img src="images/tutorial_02_04_specify_apply.png"> 
+    <p> And finish with "Ok." </p>
+    <img src="images/tutorial_02_05_click_ok.png"> 
+    <p> The tab appears in the main window. Move in to it by clicking. </p>
+    <img src="images/tutorial_02_06_simpleplugin_tab.png"> 
+    <p> Button actions only work (it is a design decision) with an activated subject. As we have the experiment from previous tutorial open, we will just activate one of its subjects. </p>
+    <img src="images/tutorial_02_07_simpleplugin_activate.png"> 
+    <p> Then click the button. </p>
+    <img src="images/tutorial_02_08_simpleplugin_click_hello.png"> 
+    <p> And the button answers. </p>
+    <img src="images/tutorial_02_09_simpleplugin_hello_messagebox.png"> 
+    <p> So that is how you create a plugin (that can contain any of your favourite python code), and how then anyone can use it. For a more complicated plugin example, you can take a look at https://github.com/Teekuningas/meggie_fooof. It makes a simple integration of fooof python package to meggie, and includes both a tab and a datatype. Even more examples of creating tabs and datatypes can be found from meggie's source, as all the core tabs and datatypes are implemented with the same system.</p>
   </div>
 </div>
-  
+<p>Last updated: 2020-01-06 </p>
 </div>
 
 </body>
