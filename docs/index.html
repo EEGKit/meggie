@@ -23,24 +23,7 @@
     <a href="#introduction">Introduction</a>
   </li>
   <li>
-    <a href="#installation">Installation</a>
-  </li>
-  <li>
-    <a href="#features">Features</a>
-    <ol>
-      <li>
-        <a href="#overview">Overview</a>
-      </li>
-      <li>
-        <a href="#analysis">Analysis</a>
-      </li>
-      <li>
-        <a href="#batching">Batching</a>
-      </li>
-      <li>
-        <a href="#plugins">Plugins</a>
-      </li>
-    </ol>
+    <a href="#overview">Overview</a>
   </li>
   <li>
     <a href="#tutorials">Tutorials</a>
@@ -58,42 +41,24 @@
 
 <div id="introduction">
   <h2>Introduction</h2>
-  <p>Meggie is an open source software for running MEG and EEG analysis with easy-to-use graphical user interface. It is written in Python 3 and uses MNE-python library under the hood to do heavy lifting. The project was started in XXXX in University of Jyväskylä and has been used in-house since the early days, but has been released to public only lately. </p>
+  <p>Meggie is an open source software for running MEG and EEG analysis with easy-to-use graphical user interface. It is written in Python 3 and uses MNE-python library under the hood to do heavy lifting. The project started in University of Jyväskylä in 2013 and has been used in-house since the early days. It became publicly available in 2019 and was officially released in 2021.</p>
 
-  <p>There are other software that can be used for M/EEG analysis. Most popular at the time of writing seem to be Fieldtrip based on Matlab language, and MNE-python based on python language. Both of these software have a great variety of analysis methods to offer and are most often used by user writing a python/matlab script in which the functions provided by the packages are called. This way user can give the raw data measured with M/EEG devices to the script, script runs a series of analysis steps, perhaps including preprocessing, epoching, averaging, and plotting, and then outputs the result. </p>
+  <p>There are other software packages that can be used for M/EEG analysis. Most popular at the time of writing seem to be Fieldtrip, which is based on Matlab language, and MNE-python, which is based on python language. Both of these software have a great variety of analysis methods to offer and are most often used by user writing a custom python/matlab script in which the functions provided by the packages are used. This way user can give the raw data measured with M/EEG devices to the script, script runs a series of analysis steps, perhaps including preprocessing, epoching, averaging, and plotting, and then outputs the result. </p>
 
-  <p>This is not always easy for researcher not familiar with programming. To mention one other matlab package, EEGLab, which made the usage easy. Community moving the python, only EEG? </p>
+  <p>That gives great flexibility for an advanced user, but can be become hard for a researcher not familiar with programming languages. Meggie tries to bring the sophisticated analysis methods from MNE-python to a simple graphical user interface, in which no programming experience is needed. </p>
 
-  <p>There is also mnelab which is also based on mne-python. Meggie is not designed to compete with mnelab, which seems to work a bit like ...elekta?, that is, it is great for inspecting data for single subjects, but not necessarily for running multiple subsequent steps of analysis in a experiment with tens of subjects. </p>
+  <p>There at least two other software that deserve a comment here. EEGLAB is a fantastic software, based on matlab language, that is used with a graphical user interface. What is more, it has greatly inspired (at least in the Lynchian idea realm) the plugin system in Meggie. The main reason for Meggie to exist in a world where EEGLAB exists, is the language. There is also another mne-python based graphical user interface, mnelab. However, at least at the time of writing, it is quite different from Meggie, being perhaps a bit more lightweight and more focused on inspecting datasets.
 
-  <p>And that is what Meggie is designed to do in very easy-to-use way, with great extendability as in EEGLab.</p>
-  <img src="images/mainwindow_empty.png">
+  <p>There are two key design ideas behind Meggie. First, experiments with multiple subjects (datasets) should be well supported. Thus, in meggie, you can add all experiment subjects to the software, and as you run the analysis steps (such as filtering), you can almost always run them for all subjects in one go. Second, we enjoy the idea of pipelines, that is, it should be easy and clear to run analysis steps sequentially, without getting lost in the way. For example, in the analysis of evoked responses, you import the data, remove artifacts, filter, resample, create epochs, average them, plot them and save them. In meggie all of this is basically clicking buttons in sequence, making it very easy to understand. To combine these two, the idea to have in mind is some kind of wave of subjects going from raw signals to fancy results.</p> 
+
+  <p> As was mentioned, Meggie has a nice plugin system. If one is familiar with python language, it is very easy to extend the functionalities of Meggie. The core functionalities, such as preprocessing, epoching, averaging, and time-frequency analysis, are actually implemented as internal plugins. </p>
+
+  <p> In the next section, an overview of the basic functions of Meggie is presented, and then there are tutorials for basic usage and plugin creation. </p>
 </div>
 
-<div id="installation">
-  <h2>Installation</h2>
-  <p>Installation happens..</p>
-</div>
-
-<div id="features">
-  <h2>Features</h2>
-  <p>Some of the basic features of Meggie are explained below.</p>
-  <div id="overview">
-    <h3>Overview</h3>
-    <p>Overview.. here put a picture with red rectangles and med eeg subjects loaded.</p>
-  </div>
-  <div id="analysis">
-    <h3>Analysis</h3>
-    <p>Data import, preprocessing (all steps), spectrums, epochs, evoked, TFR's, output as plots and csv's. Pictures?</p>
-  </div>
-  <div id="batching">
-    <h3>Batching</h3>
-    <p>Most of the actions (that do not need require supervision) can be run simulatenously for multiple subjects.</p>
-  </div>
-  <div id="plugins">
-    <h3>Plugins</h3>
-    <p>The core functionality is carefully designed and tested. However, it there are great avenues to where extend. Meggie includes a very simple to use plugin architecture.</p>
-  </div>
+<div id="overview">
+  <h2>Overview</h3>
+  <p>Overview.. here put a picture with red rectangles and med eeg subjects loaded.</p>
 </div>
 
 <div id="tutorials">
