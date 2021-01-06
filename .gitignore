@@ -1,4 +1,5 @@
-meggie/.coverage
+meggie
+meggie.egg-info
 .coverage
 *.swm
 *.pyc
