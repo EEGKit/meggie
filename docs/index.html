@@ -26,6 +26,29 @@
     <ol>
       <li>
         <a href="#overview">Overview</a>
+        <ol>
+          <li>
+            <a href="#data_import">Importing data</a>
+          </li>
+          <li>
+            <a href="#preprocessing">Preprocessing</a>
+          </li>
+          <li>
+            <a href="#spectrums">Spectrums</a>
+          </li>
+          <li>
+            <a href="#epoching">Epoching</a>
+          </li>
+          <li>
+            <a href="#averaging">Averaging</a>
+          </li>
+          <li>
+            <a href="#induced">Induced responses</a>
+          </li>
+          <li>
+            <a href="#data_output">Saving data</a>
+          </li>
+        </ol>
       </li>
       <li>
         <a href="#architecture_and_plugins">Architecture and plugins</a>
@@ -57,7 +80,7 @@
 
   <p>There at least two other software that deserve a comment here. EEGLAB is a fantastic software, based on matlab language, that is used with a graphical user interface. What is more, it has greatly inspired (at least in the Lynchian idea realm) the plugin system in Meggie. The main reason for Meggie to exist in a world where EEGLAB exists, is the language. There is also another mne-python based graphical user interface, mnelab. However, at least at the time of writing, it is quite different from Meggie, being perhaps a bit more lightweight and more focused on inspecting datasets.
 
-  <p>There are two key design ideas behind Meggie. First, experiments with multiple subjects (datasets) should be well supported. Thus, in meggie, you can add all experiment subjects to the software, and as you run the analysis steps (such as filtering), you can almost always run them for all subjects in one go. Second, we enjoy the idea of pipelines, that is, it should be easy and clear to run analysis steps sequentially, without getting lost in the way. For example, in the analysis of evoked responses, you import the data, remove artifacts, filter, resample, create epochs, average them, plot them and save them. In meggie all of this is basically clicking buttons in sequence, making it very easy to understand. To combine these two, the idea to have in mind is some kind of wave of subjects going from raw signals to fancy results.</p> 
+  <p>There are two key design ideas behind Meggie. First, experiments with multiple subjects (datasets) should be well supported. Thus, in meggie, you can add all experiment subjects to the software, and as you run the analysis steps (such as filtering), you can almost always run them for all subjects in one go. Second, we enjoy the idea of pipelines, that is, it should be easy and clear to run analysis steps sequentially, without getting lost in the way. For example, in the analysis of evoked responses, you import the data, preprocess it, epoch it, average it, and save it. In meggie, you this corresponds to moving through a sequence of tabs, making it very easy to understand. To combine these two, the idea to have in mind is some kind of wave of subjects travelling from raw signals, through the analysis steps, to final results.</p> 
 
   <p> As was mentioned, Meggie has a nice plugin system. If one is familiar with python language, it is very easy to extend the functionalities of Meggie. The core functionalities, such as preprocessing, epoching, averaging, and time-frequency analysis, are actually implemented as internal plugins. </p>
 
@@ -68,7 +91,31 @@
   <h2>Features</h2>
   <div id="overview"> 
     <h3> Overview </h3>
-    <p>Overview..</p>
+    <figure>
+      <img src="overview.png" alt="Overview">
+      <figcaption>Main view of Meggie</figcaption>
+    </figure>
+    <div id="data_import">
+      <h4> Importing data </h4>
+    </div>
+    <div id="preprocessing">
+      <h4> Preprocessing </h4>
+    </div>
+    <div id="spectrums">
+      <h4> Spectrums </h4>
+    </div>
+    <div id="epoching">
+      <h4> Epoching </h4>
+    </div>
+    <div id="averaging">
+      <h4> Averaging </h4>
+    </div>
+    <div id="induced">
+      <h4> Induced responses </h4>
+    </div>
+    <div id="data_output">
+      <h4> Saving data </h4>
+    </div>
   </div>
   <div id="architecture_and_plugins"</div>
     <h3> Architecture and plugins </h3>
