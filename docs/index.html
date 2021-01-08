@@ -92,34 +92,85 @@
   <div id="overview"> 
     <h3> Overview </h3>
     <figure>
-      <img src="overview.png" alt="Overview">
-      <figcaption>Main view of Meggie</figcaption>
+      <img src="images/overview.png" alt="Overview">
+      <figcaption>Main view of Meggie with Preprocessing tab selected.</figcaption>
     </figure>
     <div id="data_import">
       <h4> Importing data </h4>
+      <p>Meggie uses mne-python's read_raw-function to read M/EEG raw recordings. This means that, at least in theory, the following formats should be supported: edf (.edf), bdf (.bdf), gdf (.gdf), brainvision (.vhdr), fif (.fif), eeglab (.set), cnt (.cnt), egi (.mff), eximia (.nxe), nirx (.hdr), fieldtrip (.at), artmemis123, (.bin), nicolet (.data), kit (.sqd) and ctf (.ds). However, internally fif format seems to be the choice of format in mne, and might be the most supported. If having problems in importing, it is always possible to convert to fif format beforehand with other software. </p>
     </div>
     <div id="preprocessing">
       <h4> Preprocessing </h4>
+      <p> In the preprocessing tab, following actions are currently implemented for manipulating the raw data: </p>
+      <ul>
+        <li> Plot raw </li>
+        <li> Remove artifacts using ICA </li>
+        <li> Filter </li>
+        <li> Resample </li>
+        <li> Rereference EEG data </li>
+        <li> Set EEG montage </li>
+        <li> Plot SSP vectors </li>
+        <li> Events from annotations </li>
+      </ul>
     </div>
     <div id="spectrums">
       <h4> Spectrums </h4>
+      <p> In the "Spectrums" tab, one can:</p>
+      <ul>
+        <li> Create spectrums based on raw data using events or time intervals </li>
+        <li> Delete spectrums </li>
+        <li> Plot spectrums </li>
+        <li> Average spectrums over subjects </li>
+        <li> Save spectrums to csv </li>
+      </ul>
     </div>
     <div id="epoching">
       <h4> Epoching </h4>
+      <p> In the "Epoching" tab, one can: </p>
+      <ul>
+        <li> Create epochs based on events </li>
+        <li> Delete epochs </li>
+        <li> Plot epochs (plot_epochs from mne-python) </li>
+        <li> Plot epochs image (plot_epochs_image from mne-python) </li>
+      </ul>
     </div>
     <div id="averaging">
       <h4> Averaging </h4>
+      <p> In the "Averaging" tab, one can: </p>
+      <ul>
+        <li> Create evoked responses based on epochs </li>
+        <li> Delete evoked responses </li>
+        <li> Plot evoked topographies (plot_evoked from mne-python) or channel averages </li>
+        <li> Plot evoked topomaps (plot_evoked_topomap from mne-python) </li>
+        <li> Plot a single channel (plot_compare_evokeds) with more options </li>
+        <li> Average evoked responses over subjects </li>
+        <li> Save evoked responses to csv </li>
+      </ul>
     </div>
     <div id="induced">
       <h4> Induced responses </h4>
+      <p> In the "Induced responses" tab, one can: </p>
+      <ul>
+        <li> Create TFR's based on epochs </li>
+        <li> Delete TFR's </li>
+        <li> Plot TFR topographies (AverageTFR.plot_topo from mne-python) or channel averages </li>
+        <li> Plot TSE (TFR's averaged over a frequency band) topographies or channel averages </li>
+        <li> Average TFR's over subjects </li>
+        <li> Save TFR's to csv</li>
+        <li> Save TSE's to csv</li>
+      </ul>
     </div>
     <div id="data_output">
       <h4> Saving data </h4>
+      <p>There are two main output types in Meggie: plots and csv files. As listed in previous sections, these are found in their relevant tabs. </p>
     </div>
   </div>
   <div id="architecture_and_plugins"</div>
     <h3> Architecture and plugins </h3>
-    <p>Architecture and plugins..</p>
+    <p>The way Meggie is programmatically built is very simple. The core consists of an Experiment class and a Subject class, which implement logic for saving and loading of experiments and subjects. When using Meggie, you start by creating an experiment, and then adding raw data files to it. Programmatically this corresponds to creating an Experiment object and adding Subject objects to it. </p>
+    <p>
+      Graphical user interface is implemented with PyQt5. The most important piece is the Main window, which consists of everything else but tabs.
+    </p>
   </div>
 </div>
 
