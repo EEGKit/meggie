@@ -167,10 +167,12 @@
   </div>
   <div id="architecture_and_plugins"</div>
     <h3> Architecture and plugins </h3>
-    <p>The way Meggie is programmatically built is very simple. The core consists of an Experiment class and a Subject class, which implement logic for saving and loading of experiments and subjects. When using Meggie, you start by creating an experiment, and then adding raw data files to it. Programmatically this corresponds to creating an Experiment object and adding Subject objects to it. </p>
-    <p>
-      Graphical user interface is implemented with PyQt5. The most important piece is the Main window, which consists of everything else but tabs.
-    </p>
+    <p> The way Meggie is programmatically built is very simple, and is reminiscent of a russian Matryoshka doll. The core consists of an Experiment class, which implements logic for saving and loading experiments. It also stores subjects within it, and they are implemented in a Subject class. The Subject class implements logic for saving and loading subjects, most importantly the corresponding datasets. Subjects can also store different kind of objects based on predefined datatypes, for example epochs or spectrums. These objects also implement their own logic for saving and loading. These are however, part of the plugin system, and will be described soon in more detail. </p>
+    <p> Graphical user interface is implemented with PyQt5. The most important piece is the Main window, which contains the left panel, the bottom console, the menus at the top, and the container for tabs. Tabs are, however, part of the plugin system, and are created separately from the main window. </p>
+    <p> In addition to Experiment class, Subject class, and Main window, Meggie has some often needed utility functions and dialogs. These include exception handling, messagebox creation and threading, csv handling, and many others. </p>
+    <p>The actual contents of Meggie, analysis-wise, are implemented as internal plugins, which are functionally no different from external plugins. A plugin is a python package that can introduce tabs and datatypes. Datatypes are classes whose instances can be stored within subjects. Meggie comes with four datatypes, "Epochs", "Evoked", "Spectrum" and "TFR". These are python classes that submit to a certain "interface", implement saving and loading, and perhaps contain additional metadata.</p>
+    <p> Tabs consist of a declaration (in configuration.json) of what buttons (actions, transformations), and what boxes (inputs, outputs, info) should be in the tab, and then the implementations of these in python (in ui.py). Of the declaration, meggie dynamically creates the tab, figures out its layout, fills in the contents, and puts it into main window. Clicking the buttons, for example, will then call a function with specific name in the ui.py.</p>
+    <p> Creation of a simple plugin is detailed more closely in the <a href="#simpleplugin">tutorial.</a></p>
   </div>
 </div>
 
