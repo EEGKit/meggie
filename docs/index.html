@@ -78,17 +78,19 @@
 
 <div id="introduction">
   <h2>Introduction</h2>
-  <p>Meggie is an open source software for running MEG and EEG analysis with easy-to-use graphical user interface. It is written in Python 3, runs on Linux, macOS and Windows, and uses MNE-python library under the hood to do heavy lifting. The project started in Jyväskylä Centre for Interdisciplinary Brain Research (CIBR) in 2013 and has been used in-house since the early days. It became publicly available in 2019 and was officially released in 2021.</p>
+  <p>Meggie is an open source software for running MEG and EEG analysis with easy-to-use graphical user interface. It is written in Python 3, runs on Linux, macOS and Windows, and uses MNE-Python library under the hood to do heavy lifting. The project started in Jyväskylä Centre for Interdisciplinary Brain Research (CIBR) in 2013 and has been used in-house since the early days. It became publicly available in 2019 and was officially released in 2021.</p>
 
-  <p>There are other software packages that can be used for M/EEG analysis. Most popular at the time of writing seem to be FieldTrip, which is based on Matlab language, and MNE-python, which is based on python language. Both of these software have a great variety of analysis methods to offer and are most often used by users writing a custom python/matlab script in which the functions provided by the packages are used.</p>
+  <p>There are other software packages that can be used for M/EEG analysis. Most popular at the time of writing seem to be FieldTrip, which is based on Matlab language, and MNE-Python, which is based on Python language. Both of these software have a great variety of analysis methods to offer and are most often used by users writing a custom Python / Matlab script in which the functions provided by the packages are used.</p>
 
-  <p>That gives great flexibility for an advanced user, but can become hard for a researcher not familiar with programming languages. Meggie tries to bring the sophisticated analysis methods from MNE-python to a simple graphical user interface, in which no programming experience is needed. </p>
+  <p>That gives great flexibility for an advanced user, but can become hard for a researcher not familiar with programming languages. Meggie tries to bring the sophisticated analysis methods from MNE-Python to a simple graphical user interface, in which no programming experience is needed. </p>
 
-  <p>There are at least two other software that deserve a comment here. EEGLAB is a fantastic software, based on matlab language, that is used with a graphical user interface. What is more, it has greatly inspired (at least in the Lynchian idea realm) the plugin system in Meggie. Compared to EEGLAB, with all its multi-subject analysis possibilities, the main reason to consider Meggie is the great possibilities the python language brings. There is also another mne-python based graphical user interface, mnelab. However, it is quite different from Meggie, being perhaps a bit more lightweight and more faithful to mne workflows. </p>
+  <p>There are at least three other software that deserve a comment here. EEGLAB is a fantastic software, based on Matlab language, that is used with a graphical user interface. What is more, it has greatly inspired (at least in the Lynchian idea realm) the plugin system in Meggie. Similar to EEGLAB, there is Brainstorm, another fantastic software, based on Matlab language, that is used with a graphical user interface. There is also another MNE-Python based graphical user interface, mnelab.</p>
 
-  <p>There are two key design ideas behind Meggie. First, experiments with multiple subjects (datasets) should be well supported. Thus, in meggie, you can add all experiment subjects to the software, and as you run the analysis steps (such as filtering), you can almost always run them for all subjects in one go. Second, we enjoy the idea of pipelines, that is, it should be easy and clear to run analysis steps sequentially, without getting lost in the way. For example, in the analysis of evoked responses, you import the data, preprocess it, epoch it, average it, and save it. In meggie, this corresponds to moving through a sequence of tabs, making it very easy to understand. To combine these two, the idea to have in mind is some kind of wave of subjects travelling from raw signals, through the analysis steps, to final results.</p> 
+  <p>Meggie provides Brainstorm-like all-encompassing analysis environment. The main difference to Brainstorm and EEGLAB is the language. Compared to Matlab, Python is free and extends to limitless possibilities. The main difference to mnelab is that mnelab is more faithful to mne workflows, while Meggie tries to provide its own workflowic multi-subject way of doing things.</p>
 
-  <p> As was mentioned, Meggie has a nice plugin system. If one is familiar with python language, it is very easy to extend the functionalities of Meggie. The core functionalities, such as preprocessing, epoching, averaging, and time-frequency analysis, are actually implemented as internal plugins. </p>
+  <p>There are two key design ideas behind Meggie. First, experiments with multiple subjects (datasets) should be well supported. Thus, in meggie, you can add all experiment subjects to the software, and as you run the analysis steps (such as filtering), you can almost always run them for all subjects in one go. Second, is the idea of pipelines, that is, it should be easy and clear to run analysis steps sequentially, without getting lost in the way. For example, in the analysis of evoked responses, you import the data, preprocess it, epoch it, average it, and save it. In meggie, this corresponds to moving through a sequence of tabs, making it very easy to understand. To combine these two, the idea to have in mind is some kind of wave of subjects travelling from raw signals, through the analysis steps, to final results.</p> 
+
+  <p> Meggie has a extensive plugin system. If one is familiar with Python language, it is very easy to extend the functionalities of Meggie. The core functionalities, such as preprocessing, epoching, averaging, and time-frequency analysis, are actually implemented as internal plugins. </p>
 
   <p> Installation instructions, a short summary of the main features, and tutorials for basic usage and plugin creation are presented next. </p>
 </div>
@@ -115,7 +117,7 @@
     </figure>
     <div id="data_import">
       <h4> Importing data </h4>
-      <p>Meggie uses mne-python's read_raw-function to read M/EEG raw recordings. This means that, at least in theory, the following formats should be supported: edf (.edf), bdf (.bdf), gdf (.gdf), brainvision (.vhdr), fif (.fif), eeglab (.set), cnt (.cnt), egi (.mff), eximia (.nxe), nirx (.hdr), fieldtrip (.at), artmemis123, (.bin), nicolet (.data), kit (.sqd) and ctf (.ds). However, internally fif format seems to be the choice of format in mne, and might be the most supported. If having problems in importing, it is always possible to convert to fif format beforehand with other software. </p>
+      <p>Meggie uses MNE-Python's read_raw-function to read M/EEG raw recordings. This means that, at least in theory, the following formats should be supported: edf (.edf), bdf (.bdf), gdf (.gdf), brainvision (.vhdr), fif (.fif), eeglab (.set), cnt (.cnt), egi (.mff), eximia (.nxe), nirx (.hdr), fieldtrip (.at), artmemis123, (.bin), nicolet (.data), kit (.sqd) and ctf (.ds). However, internally fif format seems to be the choice of format in mne, and might be the most supported. If having problems in importing, it is always possible to convert to fif format beforehand with other software. </p>
     </div>
     <div id="preprocessing">
       <h4> Preprocessing </h4>
@@ -148,8 +150,8 @@
       <ul>
         <li> Create epochs based on events </li>
         <li> Delete epochs </li>
-        <li> Plot epochs (plot_epochs from mne-python) </li>
-        <li> Plot epochs image (plot_epochs_image from mne-python) </li>
+        <li> Plot epochs (plot_epochs from MNE-Python) </li>
+        <li> Plot epochs image (plot_epochs_image from MNE-Python) </li>
       </ul>
     </div>
     <div id="averaging">
@@ -158,8 +160,8 @@
       <ul>
         <li> Create evoked responses based on epochs </li>
         <li> Delete evoked responses </li>
-        <li> Plot evoked topographies (plot_evoked from mne-python) or channel averages </li>
-        <li> Plot evoked topomaps (plot_evoked_topomap from mne-python) </li>
+        <li> Plot evoked topographies (plot_evoked from MNE-Python) or channel averages </li>
+        <li> Plot evoked topomaps (plot_evoked_topomap from MNE-Python) </li>
         <li> Plot a single channel (plot_compare_evokeds) with more options </li>
         <li> Average evoked responses over subjects </li>
         <li> Save evoked responses to csv </li>
@@ -171,7 +173,7 @@
       <ul>
         <li> Create TFR's based on epochs </li>
         <li> Delete TFR's </li>
-        <li> Plot TFR topographies (AverageTFR.plot_topo from mne-python) or channel averages </li>
+        <li> Plot TFR topographies (AverageTFR.plot_topo from MNE-Python) or channel averages </li>
         <li> Plot TSE (TFR's averaged over a frequency band) topographies or channel averages </li>
         <li> Average TFR's over subjects </li>
         <li> Save TFR's to csv</li>
@@ -188,8 +190,8 @@
     <p> The way Meggie is programmatically built is very simple, and is reminiscent of a russian Matryoshka doll. The core consists of an Experiment class, which implements logic for saving and loading experiments. It also stores subjects within it, and they are implemented in a Subject class. The Subject class implements logic for saving and loading subjects, most importantly the corresponding datasets. Subjects can also store different kind of objects based on predefined datatypes, for example epochs or spectrums. These objects also implement their own logic for saving and loading. They are however, part of the plugin system, and will be described soon in more detail. </p>
     <p> Graphical user interface is implemented with PyQt5. The most important piece is the Main window, which contains the left panel, the bottom console, the menus at the top, and the container for tabs. Tabs are, however, part of the plugin system, and are created separately from the main window. </p>
     <p> In addition to Experiment class, Subject class, and Main window, Meggie includes some often needed utility functions and dialogs. These take care of exception handling, messagebox creation, threading, csv handling, and some other. </p>
-    <p>The actual contents of Meggie, analysis-wise, are implemented as internal plugins, which are functionally no different from external plugins. A plugin is a python package that can introduce tabs and datatypes. Datatypes are classes whose instances can be stored within subjects. Meggie comes with four datatypes, "Epochs", "Evoked", "Spectrum" and "TFR". These are python classes that submit to a certain "interface", implement saving and loading, and perhaps contain additional metadata.</p>
-    <p> Tabs consist of a declaration (in configuration.json) of what buttons (actions, transformations), and what boxes (inputs, outputs, info) should be in the tab, and then the implementations of these in python (in ui.py). From the declaration, meggie dynamically creates the tab, figures out its layout, fills in the contents, and puts it into main window. Clicking the buttons, for example, will then call a function with matching name in the ui.py.</p>
+    <p>The actual contents of Meggie, analysis-wise, are implemented as internal plugins, which are functionally no different from external plugins. A plugin is a Python package that can introduce tabs and datatypes. Datatypes are classes whose instances can be stored within subjects. Meggie comes with four datatypes, "Epochs", "Evoked", "Spectrum" and "TFR". These are Python classes that submit to a certain "interface", implement saving and loading, and perhaps contain additional metadata.</p>
+    <p> Tabs consist of a declaration (in configuration.json) of what buttons (actions, transformations), and what boxes (inputs, outputs, info) should be in the tab, and then the implementations of these in Python (in ui.py). From the declaration, meggie dynamically creates the tab, figures out its layout, fills in the contents, and puts it into main window. Clicking the buttons, for example, will then call a function with matching name in the ui.py.</p>
     <p> Creation of a simple plugin is detailed more closely in the <a href="#simpleplugin">tutorial.</a></p>
   </div>
 </div>
@@ -234,7 +236,7 @@
     <img src="images/tutorial_01_14_resample_batch_apply.png"> 
     <p>"Sampling rate" in the measurement info box has updated. Next click "Set EEG montage."</p>
     <img src="images/tutorial_01_15_montage.png"> 
-    <p>The list has many good options for montages (the ones shipped with mne-python), and often one can just use one of them. However, with the cap we had, none of the montages in the list was quite right. Thus we had to use a custom montage file</p>
+    <p>The list has many good options for montages (the ones shipped with MNE-Python), and often one can just use one of them. However, with the cap we had, none of the montages in the list was quite right. Thus we had to use a custom montage file</p>
     <img src="images/tutorial_01_16_montage_select.png"> 
     <p>Once again, select "Batch processing."</p>
     <img src="images/tutorial_01_17_montage_batch.png"> 
@@ -270,7 +272,7 @@
     <img src="images/tutorial_01_32_spectrum_select_groupaverage.png"> 
     <p>Information on the item appears on the "Spectrum info" box. In contrast to the "Spectrum" item, which is present for all subjects, "group_Spectrum" item is, even though it is based on the data from all subjects, only stored under the active subject. Click "Plot spectrum.</p>
     <img src="images/tutorial_01_33_spectrum_plotspectrum.png"> 
-    <p>Select "Channel averages". By default, channel averages use standard groups of channels from mne-python, that is, "Left-frontal", "Right-frontal", "Left-occipital", "Right-occipital", "Left-parietal", "Right-parietal", "Left-temporal" and "Right-temporal." The standard groups are computed using the channel locations, and that is why it was necessary to set the montages. One can also create custom groups of channels by clicking "Channel groups.." in the left panel of main window just under the "Name" and "Author" fields.</p>
+    <p>Select "Channel averages". By default, channel averages use standard groups of channels from MNE-Python, that is, "Left-frontal", "Right-frontal", "Left-occipital", "Right-occipital", "Left-parietal", "Right-parietal", "Left-temporal" and "Right-temporal." The standard groups are computed using the channel locations, and that is why it was necessary to set the montages. One can also create custom groups of channels by clicking "Channel groups.." in the left panel of main window just under the "Name" and "Author" fields.</p>
     <img src="images/tutorial_01_34_spectrum_plotspectrum_select_channelaverages.png"> 
     <p>Then click "Accept."</p>
     <img src="images/tutorial_01_35_spectrum_plotspectrum_apply.png"> 
@@ -290,7 +292,7 @@
   </div>
   <div id="simpleplugin">
     <h3>Creating the simplest possible plugin</h3>
-    <p>Creating a plugin for Meggie is simple. You need to create a python package with a specific type of name (meggie_*) and some minimal boilerplate, and it will be automatically searched and used by Meggie. The code for this example can be found from https://github.com/Teekuningas/meggie_simpleplugin. </p>
+    <p>Creating a plugin for Meggie is simple. You need to create a Python package with a specific type of name (meggie_*) and some minimal boilerplate, and it will be automatically searched and used by Meggie. The code for this example can be found from https://github.com/Teekuningas/meggie_simpleplugin. </p>
     <p>To create such a package, you want to have a directory with this kind of contents:</p>
     <div class="codelisting">
       <ul>
@@ -316,7 +318,7 @@
         </li>
       </ul>
     </div>
-    <p>"MANIFEST.in" and "setup.py" are standard files in python packaging. "MANIFEST.in" lists what files inside the subdirectories should be included and what should be excluded when installing the package. "setup.py" contains the installation script with some metadata and flags. For us, most trivial ones should be fine. </p>
+    <p>"MANIFEST.in" and "setup.py" are standard files in Python packaging. "MANIFEST.in" lists what files inside the subdirectories should be included and what should be excluded when installing the package. "setup.py" contains the installation script with some metadata and flags. For us, most trivial ones should be fine. </p>
     <p>MANIFEST.in: </p>
     <div class="codelisting">
       <ul>
@@ -355,7 +357,7 @@
         <li> } </li>
       </ul>
     </div>
-    <p> Just to quickly note, the __init__.py files are marking folders to be python packages. In our case, they must be present but are empty. Already, with this previous "configuration.json" file, Meggie would find the plugin, but could not do anything with it. To add some functionality, we include a "tabs" folder. Naming here is important; Meggie will look for folder "tabs" and "datatypes" inside the package folder. In this example, we will create a tab similar to "Preprocessing", "Spectrums", and so on, present in core Meggie, and name it "Simple plugin". And so, inside the "tabs" folder, we have folder named "simpleplugin". Inside it, we need to have two files. "configuration.json" specifies unique id of the tab and the visually shown name of the tab, but also specifies what should be put inside the tab, that is, what buttons, what boxes, and so on. The "ui.py" file then will contain the implementations of those things specified in the "configuration.json". This division into what and how gives Meggie a nice unified look. We will make a simple tab with a "Hello" button, which when clicked, will open a messagebox saying hello to the active subject. Here is the "configuration.json":</p>
+    <p> Just to quickly note, the __init__.py files are marking folders to be Python packages. In our case, they must be present but are empty. Already, with this previous "configuration.json" file, Meggie would find the plugin, but could not do anything with it. To add some functionality, we include a "tabs" folder. Naming here is important; Meggie will look for folder "tabs" and "datatypes" inside the package folder. In this example, we will create a tab similar to "Preprocessing", "Spectrums", and so on, present in core Meggie, and name it "Simple plugin". And so, inside the "tabs" folder, we have folder named "simpleplugin". Inside it, we need to have two files. "configuration.json" specifies unique id of the tab and the visually shown name of the tab, but also specifies what should be put inside the tab, that is, what buttons, what boxes, and so on. The "ui.py" file then will contain the implementations of those things specified in the "configuration.json". This division into what and how gives Meggie a nice unified look. We will make a simple tab with a "Hello" button, which when clicked, will open a messagebox saying hello to the active subject. Here is the "configuration.json":</p>
     <div class="codelisting">
       <ul>
         <li> { 
@@ -382,7 +384,7 @@
         </li>
       </ul>
     </div>
-    <p>The function takes three arguments. "experiment" is a instance of Experiment object, containing metadata, and all the subjects, and with them, almost everything. "data" contains possible selections from the input boxes inside the tab. We don't have any of them now. "window" is instance of the main window, a PyQt object. We use a meggie utility called messagebox to show the message about active subject. Of course, now it is python, and you have the power. That is it, we are finished. To test it, install the package with "python setup.py install", start meggie, and open "Preferences.."</p>
+    <p>The function takes three arguments. "experiment" is a instance of Experiment object, containing metadata, and all the subjects, and with them, almost everything. "data" contains possible selections from the input boxes inside the tab. We don't have any of them now. "window" is instance of the main window, a PyQt object. We use a meggie utility called messagebox to show the message about active subject. Of course, now it is Python, and you have the power. That is it, we are finished. To test it, install the package with "python setup.py install", start meggie, and open "Preferences.."</p>
     <img src="images/tutorial_02_01_open_preferences.png"> 
     <p> Then select "Custom" </p>
     <img src="images/tutorial_02_02_select_custom.png"> 
@@ -400,10 +402,10 @@
     <img src="images/tutorial_02_08_simpleplugin_click_hello.png"> 
     <p> And the button answers. </p>
     <img src="images/tutorial_02_09_simpleplugin_hello_messagebox.png"> 
-    <p> So that is how you create a plugin (that can contain any of your favourite python code), and how then anyone can use it. For a more complicated plugin example, you can take a look at https://github.com/Teekuningas/meggie_fooof. It makes a simple integration of fooof python package to meggie, and includes both a tab and a datatype. Even more examples of creating tabs and datatypes can be found from meggie's source, as all the core tabs and datatypes are implemented with the same system.</p>
+    <p> So that is how you create a plugin (that can contain any of your favourite Python code), and how then anyone can use it. For a more complicated plugin example, you can take a look at https://github.com/Teekuningas/meggie_fooof. It makes a simple integration of fooof Python package to meggie, and includes both a tab and a datatype. Even more examples of creating tabs and datatypes can be found from meggie's source, as all the core tabs and datatypes are implemented with the same system.</p>
   </div>
 </div>
-<p>Last updated: 2021-03-10 </p>
+<p>Last updated: 2021-04-20</p>
 </div>
 
 </body>
