@@ -1,0 +1,21 @@
+meggie.datatypes package
+========================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   meggie.datatypes.epochs
+   meggie.datatypes.evoked
+   meggie.datatypes.spectrum
+   meggie.datatypes.tfr
+
+Module contents
+---------------
+
+.. automodule:: meggie.datatypes
+   :members:
+   :undoc-members:
+   :show-inheritance:

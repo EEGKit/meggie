@@ -1,0 +1,351 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>meggie.tabs package &mdash; Meggie 1.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="meggie.tabs.epochs package" href="meggie.tabs.epochs.html" />
+    <link rel="prev" title="meggie.mainwindow.dialogs package" href="meggie.mainwindow.dialogs.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Architecture</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">meggie</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="meggie.html">meggie package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="meggie.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="meggie.datatypes.html">meggie.datatypes package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.mainwindow.html">meggie.mainwindow package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">meggie.tabs package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.utilities.html">meggie.utilities package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie.experiment">meggie.experiment module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie.mainWindowMain">meggie.mainWindowMain module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie.mainWindowUi">meggie.mainWindowUi module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie.run">meggie.run module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie.subject">meggie.subject module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Meggie</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">meggie</a> &raquo;</li>
+        
+          <li><a href="meggie.html">meggie package</a> &raquo;</li>
+        
+      <li>meggie.tabs package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/meggie.tabs.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="meggie-tabs-package">
+<h1>meggie.tabs package<a class="headerlink" href="#meggie-tabs-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="meggie.tabs.epochs.html">meggie.tabs.epochs package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="meggie.tabs.epochs.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="meggie.tabs.epochs.controller.html">meggie.tabs.epochs.controller package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.epochs.controller.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.epochs.controller.html#module-meggie.tabs.epochs.controller.epoching">meggie.tabs.epochs.controller.epoching module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.epochs.controller.html#module-meggie.tabs.epochs.controller">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.tabs.epochs.dialogs.html">meggie.tabs.epochs.dialogs package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.epochs.dialogs.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.epochs.dialogs.html#module-meggie.tabs.epochs.dialogs.createEpochsFromEventsDialogMain">meggie.tabs.epochs.dialogs.createEpochsFromEventsDialogMain module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.epochs.dialogs.html#module-meggie.tabs.epochs.dialogs.createEpochsFromEventsDialogUi">meggie.tabs.epochs.dialogs.createEpochsFromEventsDialogUi module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.epochs.dialogs.html#module-meggie.tabs.epochs.dialogs">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.tabs.epochs.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.tabs.epochs.html#module-meggie.tabs.epochs.ui">meggie.tabs.epochs.ui module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.tabs.epochs.html#module-meggie.tabs.epochs">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="meggie.tabs.evoked.html">meggie.tabs.evoked package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="meggie.tabs.evoked.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="meggie.tabs.evoked.controller.html">meggie.tabs.evoked.controller package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.evoked.controller.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.evoked.controller.html#module-meggie.tabs.evoked.controller.evoked">meggie.tabs.evoked.controller.evoked module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.evoked.controller.html#module-meggie.tabs.evoked.controller">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.tabs.evoked.dialogs.html">meggie.tabs.evoked.dialogs package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.evoked.dialogs.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.evoked.dialogs.html#module-meggie.tabs.evoked.dialogs.createEvokedDialogMain">meggie.tabs.evoked.dialogs.createEvokedDialogMain module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.evoked.dialogs.html#module-meggie.tabs.evoked.dialogs.createEvokedDialogUi">meggie.tabs.evoked.dialogs.createEvokedDialogUi module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.evoked.dialogs.html#module-meggie.tabs.evoked.dialogs.evokedTopomapDialogMain">meggie.tabs.evoked.dialogs.evokedTopomapDialogMain module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.evoked.dialogs.html#module-meggie.tabs.evoked.dialogs.evokedTopomapDialogUi">meggie.tabs.evoked.dialogs.evokedTopomapDialogUi module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.evoked.dialogs.html#module-meggie.tabs.evoked.dialogs">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.tabs.evoked.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.tabs.evoked.html#module-meggie.tabs.evoked.ui">meggie.tabs.evoked.ui module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.tabs.evoked.html#module-meggie.tabs.evoked">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="meggie.tabs.preprocessing.html">meggie.tabs.preprocessing package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="meggie.tabs.preprocessing.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="meggie.tabs.preprocessing.controller.html">meggie.tabs.preprocessing.controller package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.preprocessing.controller.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.preprocessing.controller.html#module-meggie.tabs.preprocessing.controller.filter">meggie.tabs.preprocessing.controller.filter module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.preprocessing.controller.html#module-meggie.tabs.preprocessing.controller.ica">meggie.tabs.preprocessing.controller.ica module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.preprocessing.controller.html#module-meggie.tabs.preprocessing.controller">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.tabs.preprocessing.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.tabs.preprocessing.html#module-meggie.tabs.preprocessing.ui">meggie.tabs.preprocessing.ui module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.tabs.preprocessing.html#module-meggie.tabs.preprocessing">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="meggie.tabs.spectrum.html">meggie.tabs.spectrum package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="meggie.tabs.spectrum.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="meggie.tabs.spectrum.controller.html">meggie.tabs.spectrum.controller package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.spectrum.controller.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.spectrum.controller.html#module-meggie.tabs.spectrum.controller.spectrum">meggie.tabs.spectrum.controller.spectrum module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.spectrum.controller.html#module-meggie.tabs.spectrum.controller">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.tabs.spectrum.dialogs.html">meggie.tabs.spectrum.dialogs package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.spectrum.dialogs.html#module-meggie.tabs.spectrum.dialogs">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.tabs.spectrum.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.tabs.spectrum.html#module-meggie.tabs.spectrum.ui">meggie.tabs.spectrum.ui module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.tabs.spectrum.html#module-meggie.tabs.spectrum">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="meggie.tabs.tfr.html">meggie.tabs.tfr package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="meggie.tabs.tfr.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="meggie.tabs.tfr.controller.html">meggie.tabs.tfr.controller package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.tfr.controller.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.tfr.controller.html#module-meggie.tabs.tfr.controller.tfr">meggie.tabs.tfr.controller.tfr module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.tfr.controller.html#module-meggie.tabs.tfr.controller">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.tabs.tfr.dialogs.html">meggie.tabs.tfr.dialogs package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.tfr.dialogs.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.tfr.dialogs.html#module-meggie.tabs.tfr.dialogs.TFRDialogMain">meggie.tabs.tfr.dialogs.TFRDialogMain module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.tfr.dialogs.html#module-meggie.tabs.tfr.dialogs.TFRDialogUi">meggie.tabs.tfr.dialogs.TFRDialogUi module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.tfr.dialogs.html#module-meggie.tabs.tfr.dialogs.TFROutputOptionsMain">meggie.tabs.tfr.dialogs.TFROutputOptionsMain module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.tfr.dialogs.html#module-meggie.tabs.tfr.dialogs.TFROutputOptionsUi">meggie.tabs.tfr.dialogs.TFROutputOptionsUi module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.tabs.tfr.dialogs.html#module-meggie.tabs.tfr.dialogs">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.tabs.tfr.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.tabs.tfr.html#module-meggie.tabs.tfr.ui">meggie.tabs.tfr.ui module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.tabs.tfr.html#module-meggie.tabs.tfr">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="module-meggie.tabs">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-meggie.tabs" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="meggie.tabs.epochs.html" class="btn btn-neutral float-right" title="meggie.tabs.epochs package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="meggie.mainwindow.dialogs.html" class="btn btn-neutral float-left" title="meggie.mainwindow.dialogs package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, CIBR.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

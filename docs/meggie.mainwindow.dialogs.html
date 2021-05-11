@@ -1,0 +1,554 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>meggie.mainwindow.dialogs package &mdash; Meggie 1.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="meggie.utilities package" href="meggie.utilities.html" />
+    <link rel="prev" title="meggie.mainwindow package" href="meggie.mainwindow.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Architecture</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">meggie</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="meggie.html">meggie package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="meggie.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="meggie.datatypes.html">meggie.datatypes package</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="meggie.mainwindow.html">meggie.mainwindow package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.utilities.html">meggie.utilities package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie.experiment">meggie.experiment module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie.mainWindowMain">meggie.mainWindowMain module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie.mainWindowUi">meggie.mainWindowUi module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie.run">meggie.run module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie.subject">meggie.subject module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Meggie</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">meggie</a> &raquo;</li>
+        
+          <li><a href="meggie.html">meggie package</a> &raquo;</li>
+        
+          <li><a href="meggie.mainwindow.html">meggie.mainwindow package</a> &raquo;</li>
+        
+      <li>meggie.mainwindow.dialogs package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/meggie.mainwindow.dialogs.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="meggie-mainwindow-dialogs-package">
+<h1>meggie.mainwindow.dialogs package<a class="headerlink" href="#meggie-mainwindow-dialogs-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-meggie.mainwindow.dialogs.aboutDialogMain">
+<span id="meggie-mainwindow-dialogs-aboutdialogmain-module"></span><h2>meggie.mainwindow.dialogs.aboutDialogMain module<a class="headerlink" href="#module-meggie.mainwindow.dialogs.aboutDialogMain" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.aboutDialogMain.AboutDialog">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">meggie.mainwindow.dialogs.aboutDialogMain.</span></span><span class="sig-name descname"><span class="pre">AboutDialog</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.aboutDialogMain.AboutDialog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QDialog</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.aboutDialogMain.AboutDialog.on_pushButtonClose_clicked">
+<span class="sig-name descname"><span class="pre">on_pushButtonClose_clicked</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.aboutDialogMain.AboutDialog.on_pushButtonClose_clicked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-meggie.mainwindow.dialogs.aboutDialogUi">
+<span id="meggie-mainwindow-dialogs-aboutdialogui-module"></span><h2>meggie.mainwindow.dialogs.aboutDialogUi module<a class="headerlink" href="#module-meggie.mainwindow.dialogs.aboutDialogUi" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.aboutDialogUi.Ui_Dialog">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">meggie.mainwindow.dialogs.aboutDialogUi.</span></span><span class="sig-name descname"><span class="pre">Ui_Dialog</span></span><a class="headerlink" href="#meggie.mainwindow.dialogs.aboutDialogUi.Ui_Dialog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.aboutDialogUi.Ui_Dialog.retranslateUi">
+<span class="sig-name descname"><span class="pre">retranslateUi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Dialog</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.aboutDialogUi.Ui_Dialog.retranslateUi" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.aboutDialogUi.Ui_Dialog.setupUi">
+<span class="sig-name descname"><span class="pre">setupUi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Dialog</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.aboutDialogUi.Ui_Dialog.setupUi" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-meggie.mainwindow.dialogs.addSubjectDialogMain">
+<span id="meggie-mainwindow-dialogs-addsubjectdialogmain-module"></span><h2>meggie.mainwindow.dialogs.addSubjectDialogMain module<a class="headerlink" href="#module-meggie.mainwindow.dialogs.addSubjectDialogMain" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.addSubjectDialogMain.AddSubjectDialog">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">meggie.mainwindow.dialogs.addSubjectDialogMain.</span></span><span class="sig-name descname"><span class="pre">AddSubjectDialog</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.addSubjectDialogMain.AddSubjectDialog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QDialog</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.addSubjectDialogMain.AddSubjectDialog.accept">
+<span class="sig-name descname"><span class="pre">accept</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.addSubjectDialogMain.AddSubjectDialog.accept" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add new subjects.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.addSubjectDialogMain.AddSubjectDialog.on_listWidgetFileNames_itemSelectionChanged">
+<span class="sig-name descname"><span class="pre">on_listWidgetFileNames_itemSelectionChanged</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.addSubjectDialogMain.AddSubjectDialog.on_listWidgetFileNames_itemSelectionChanged" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.addSubjectDialogMain.AddSubjectDialog.on_pushButtonBrowse_clicked">
+<span class="sig-name descname"><span class="pre">on_pushButtonBrowse_clicked</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.addSubjectDialogMain.AddSubjectDialog.on_pushButtonBrowse_clicked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Open file browser for raw data files.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.addSubjectDialogMain.AddSubjectDialog.on_pushButtonRemove_clicked">
+<span class="sig-name descname"><span class="pre">on_pushButtonRemove_clicked</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.addSubjectDialogMain.AddSubjectDialog.on_pushButtonRemove_clicked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes selected filenames on the listWidgetFileNames.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-meggie.mainwindow.dialogs.addSubjectDialogUi">
+<span id="meggie-mainwindow-dialogs-addsubjectdialogui-module"></span><h2>meggie.mainwindow.dialogs.addSubjectDialogUi module<a class="headerlink" href="#module-meggie.mainwindow.dialogs.addSubjectDialogUi" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.addSubjectDialogUi.Ui_AddSubject">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">meggie.mainwindow.dialogs.addSubjectDialogUi.</span></span><span class="sig-name descname"><span class="pre">Ui_AddSubject</span></span><a class="headerlink" href="#meggie.mainwindow.dialogs.addSubjectDialogUi.Ui_AddSubject" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.addSubjectDialogUi.Ui_AddSubject.retranslateUi">
+<span class="sig-name descname"><span class="pre">retranslateUi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">AddSubject</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.addSubjectDialogUi.Ui_AddSubject.retranslateUi" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.addSubjectDialogUi.Ui_AddSubject.setupUi">
+<span class="sig-name descname"><span class="pre">setupUi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">AddSubject</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.addSubjectDialogUi.Ui_AddSubject.setupUi" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-meggie.mainwindow.dialogs.channelGroupsDialogMain">
+<span id="meggie-mainwindow-dialogs-channelgroupsdialogmain-module"></span><h2>meggie.mainwindow.dialogs.channelGroupsDialogMain module<a class="headerlink" href="#module-meggie.mainwindow.dialogs.channelGroupsDialogMain" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.channelGroupsDialogMain.ChannelGroupsDialog">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">meggie.mainwindow.dialogs.channelGroupsDialogMain.</span></span><span class="sig-name descname"><span class="pre">ChannelGroupsDialog</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.channelGroupsDialogMain.ChannelGroupsDialog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QDialog</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.channelGroupsDialogMain.ChannelGroupsDialog.accept">
+<span class="sig-name descname"><span class="pre">accept</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.channelGroupsDialogMain.ChannelGroupsDialog.accept" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.channelGroupsDialogMain.ChannelGroupsDialog.on_pushButtonAdd_clicked">
+<span class="sig-name descname"><span class="pre">on_pushButtonAdd_clicked</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.channelGroupsDialogMain.ChannelGroupsDialog.on_pushButtonAdd_clicked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.channelGroupsDialogMain.ChannelGroupsDialog.on_pushButtonRemove_clicked">
+<span class="sig-name descname"><span class="pre">on_pushButtonRemove_clicked</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.channelGroupsDialogMain.ChannelGroupsDialog.on_pushButtonRemove_clicked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.channelGroupsDialogMain.ChannelGroupsDialog.on_pushButtonReset_clicked">
+<span class="sig-name descname"><span class="pre">on_pushButtonReset_clicked</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.channelGroupsDialogMain.ChannelGroupsDialog.on_pushButtonReset_clicked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.channelGroupsDialogMain.ChannelGroupsDialog.on_pushButtonSetChannels_clicked">
+<span class="sig-name descname"><span class="pre">on_pushButtonSetChannels_clicked</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.channelGroupsDialogMain.ChannelGroupsDialog.on_pushButtonSetChannels_clicked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.channelGroupsDialogMain.ChannelGroupsDialog.on_radioButtonEEG_toggled">
+<span class="sig-name descname"><span class="pre">on_radioButtonEEG_toggled</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.channelGroupsDialogMain.ChannelGroupsDialog.on_radioButtonEEG_toggled" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.channelGroupsDialogMain.ChannelGroupsDialog.on_radioButtonMEG_toggled">
+<span class="sig-name descname"><span class="pre">on_radioButtonMEG_toggled</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.channelGroupsDialogMain.ChannelGroupsDialog.on_radioButtonMEG_toggled" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-meggie.mainwindow.dialogs.channelGroupsDialogUi">
+<span id="meggie-mainwindow-dialogs-channelgroupsdialogui-module"></span><h2>meggie.mainwindow.dialogs.channelGroupsDialogUi module<a class="headerlink" href="#module-meggie.mainwindow.dialogs.channelGroupsDialogUi" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.channelGroupsDialogUi.Ui_channelGroupsDialog">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">meggie.mainwindow.dialogs.channelGroupsDialogUi.</span></span><span class="sig-name descname"><span class="pre">Ui_channelGroupsDialog</span></span><a class="headerlink" href="#meggie.mainwindow.dialogs.channelGroupsDialogUi.Ui_channelGroupsDialog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.channelGroupsDialogUi.Ui_channelGroupsDialog.retranslateUi">
+<span class="sig-name descname"><span class="pre">retranslateUi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">channelGroupsDialog</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.channelGroupsDialogUi.Ui_channelGroupsDialog.retranslateUi" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.channelGroupsDialogUi.Ui_channelGroupsDialog.setupUi">
+<span class="sig-name descname"><span class="pre">setupUi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">channelGroupsDialog</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.channelGroupsDialogUi.Ui_channelGroupsDialog.setupUi" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-meggie.mainwindow.dialogs.createExperimentDialogMain">
+<span id="meggie-mainwindow-dialogs-createexperimentdialogmain-module"></span><h2>meggie.mainwindow.dialogs.createExperimentDialogMain module<a class="headerlink" href="#module-meggie.mainwindow.dialogs.createExperimentDialogMain" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.createExperimentDialogMain.CreateExperimentDialog">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">meggie.mainwindow.dialogs.createExperimentDialogMain.</span></span><span class="sig-name descname"><span class="pre">CreateExperimentDialog</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.createExperimentDialogMain.CreateExperimentDialog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QDialog</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.createExperimentDialogMain.CreateExperimentDialog.accept">
+<span class="sig-name descname"><span class="pre">accept</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.createExperimentDialogMain.CreateExperimentDialog.accept" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send parameters to initialize_new_experiment.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-meggie.mainwindow.dialogs.createExperimentDialogUi">
+<span id="meggie-mainwindow-dialogs-createexperimentdialogui-module"></span><h2>meggie.mainwindow.dialogs.createExperimentDialogUi module<a class="headerlink" href="#module-meggie.mainwindow.dialogs.createExperimentDialogUi" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.createExperimentDialogUi.Ui_CreateExperimentDialog">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">meggie.mainwindow.dialogs.createExperimentDialogUi.</span></span><span class="sig-name descname"><span class="pre">Ui_CreateExperimentDialog</span></span><a class="headerlink" href="#meggie.mainwindow.dialogs.createExperimentDialogUi.Ui_CreateExperimentDialog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.createExperimentDialogUi.Ui_CreateExperimentDialog.retranslateUi">
+<span class="sig-name descname"><span class="pre">retranslateUi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">CreateExperimentDialog</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.createExperimentDialogUi.Ui_CreateExperimentDialog.retranslateUi" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.createExperimentDialogUi.Ui_CreateExperimentDialog.setupUi">
+<span class="sig-name descname"><span class="pre">setupUi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">CreateExperimentDialog</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.createExperimentDialogUi.Ui_CreateExperimentDialog.setupUi" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-meggie.mainwindow.dialogs.customTabsDialogMain">
+<span id="meggie-mainwindow-dialogs-customtabsdialogmain-module"></span><h2>meggie.mainwindow.dialogs.customTabsDialogMain module<a class="headerlink" href="#module-meggie.mainwindow.dialogs.customTabsDialogMain" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.customTabsDialogMain.CustomTabsDialog">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">meggie.mainwindow.dialogs.customTabsDialogMain.</span></span><span class="sig-name descname"><span class="pre">CustomTabsDialog</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">enabled_tabs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.customTabsDialogMain.CustomTabsDialog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QDialog</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.customTabsDialogMain.CustomTabsDialog.accept">
+<span class="sig-name descname"><span class="pre">accept</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.customTabsDialogMain.CustomTabsDialog.accept" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-meggie.mainwindow.dialogs.customTabsDialogUi">
+<span id="meggie-mainwindow-dialogs-customtabsdialogui-module"></span><h2>meggie.mainwindow.dialogs.customTabsDialogUi module<a class="headerlink" href="#module-meggie.mainwindow.dialogs.customTabsDialogUi" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.customTabsDialogUi.Ui_customTabsDialog">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">meggie.mainwindow.dialogs.customTabsDialogUi.</span></span><span class="sig-name descname"><span class="pre">Ui_customTabsDialog</span></span><a class="headerlink" href="#meggie.mainwindow.dialogs.customTabsDialogUi.Ui_customTabsDialog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.customTabsDialogUi.Ui_customTabsDialog.retranslateUi">
+<span class="sig-name descname"><span class="pre">retranslateUi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">customTabsDialog</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.customTabsDialogUi.Ui_customTabsDialog.retranslateUi" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.customTabsDialogUi.Ui_customTabsDialog.setupUi">
+<span class="sig-name descname"><span class="pre">setupUi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">customTabsDialog</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.customTabsDialogUi.Ui_customTabsDialog.setupUi" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-meggie.mainwindow.dialogs.logDialogMain">
+<span id="meggie-mainwindow-dialogs-logdialogmain-module"></span><h2>meggie.mainwindow.dialogs.logDialogMain module<a class="headerlink" href="#module-meggie.mainwindow.dialogs.logDialogMain" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.logDialogMain.LogDialog">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">meggie.mainwindow.dialogs.logDialogMain.</span></span><span class="sig-name descname"><span class="pre">LogDialog</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.logDialogMain.LogDialog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QDialog</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.logDialogMain.LogDialog.on_checkBoxShowMNE_stateChanged">
+<span class="sig-name descname"><span class="pre">on_checkBoxShowMNE_stateChanged</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.logDialogMain.LogDialog.on_checkBoxShowMNE_stateChanged" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.logDialogMain.LogDialog.on_checkBoxShowMNEcall_stateChanged">
+<span class="sig-name descname"><span class="pre">on_checkBoxShowMNEcall_stateChanged</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.logDialogMain.LogDialog.on_checkBoxShowMNEcall_stateChanged" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.logDialogMain.LogDialog.on_checkBoxShowMeggie_stateChanged">
+<span class="sig-name descname"><span class="pre">on_checkBoxShowMeggie_stateChanged</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.logDialogMain.LogDialog.on_checkBoxShowMeggie_stateChanged" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.logDialogMain.LogDialog.on_pushButtonBufferSize_clicked">
+<span class="sig-name descname"><span class="pre">on_pushButtonBufferSize_clicked</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.logDialogMain.LogDialog.on_pushButtonBufferSize_clicked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.logDialogMain.LogDialog.update_contents">
+<span class="sig-name descname"><span class="pre">update_contents</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.logDialogMain.LogDialog.update_contents" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-meggie.mainwindow.dialogs.logDialogUi">
+<span id="meggie-mainwindow-dialogs-logdialogui-module"></span><h2>meggie.mainwindow.dialogs.logDialogUi module<a class="headerlink" href="#module-meggie.mainwindow.dialogs.logDialogUi" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.logDialogUi.Ui_LogDialog">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">meggie.mainwindow.dialogs.logDialogUi.</span></span><span class="sig-name descname"><span class="pre">Ui_LogDialog</span></span><a class="headerlink" href="#meggie.mainwindow.dialogs.logDialogUi.Ui_LogDialog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.logDialogUi.Ui_LogDialog.retranslateUi">
+<span class="sig-name descname"><span class="pre">retranslateUi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">LogDialog</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.logDialogUi.Ui_LogDialog.retranslateUi" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.logDialogUi.Ui_LogDialog.setupUi">
+<span class="sig-name descname"><span class="pre">setupUi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">LogDialog</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.logDialogUi.Ui_LogDialog.setupUi" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-meggie.mainwindow.dialogs.preferencesDialogMain">
+<span id="meggie-mainwindow-dialogs-preferencesdialogmain-module"></span><h2>meggie.mainwindow.dialogs.preferencesDialogMain module<a class="headerlink" href="#module-meggie.mainwindow.dialogs.preferencesDialogMain" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.preferencesDialogMain.PreferencesDialog">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">meggie.mainwindow.dialogs.preferencesDialogMain.</span></span><span class="sig-name descname"><span class="pre">PreferencesDialog</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.preferencesDialogMain.PreferencesDialog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QDialog</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.preferencesDialogMain.PreferencesDialog.accept">
+<span class="sig-name descname"><span class="pre">accept</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.preferencesDialogMain.PreferencesDialog.accept" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.preferencesDialogMain.PreferencesDialog.on_ButtonBrowseWorkingDir_clicked">
+<span class="sig-name descname"><span class="pre">on_ButtonBrowseWorkingDir_clicked</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.preferencesDialogMain.PreferencesDialog.on_ButtonBrowseWorkingDir_clicked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Opens a filebrowser to select the workspace.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.preferencesDialogMain.PreferencesDialog.on_pushButtonCustom_clicked">
+<span class="sig-name descname"><span class="pre">on_pushButtonCustom_clicked</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.preferencesDialogMain.PreferencesDialog.on_pushButtonCustom_clicked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-meggie.mainwindow.dialogs.preferencesDialogUi">
+<span id="meggie-mainwindow-dialogs-preferencesdialogui-module"></span><h2>meggie.mainwindow.dialogs.preferencesDialogUi module<a class="headerlink" href="#module-meggie.mainwindow.dialogs.preferencesDialogUi" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.preferencesDialogUi.Ui_DialogPreferences">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">meggie.mainwindow.dialogs.preferencesDialogUi.</span></span><span class="sig-name descname"><span class="pre">Ui_DialogPreferences</span></span><a class="headerlink" href="#meggie.mainwindow.dialogs.preferencesDialogUi.Ui_DialogPreferences" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.preferencesDialogUi.Ui_DialogPreferences.retranslateUi">
+<span class="sig-name descname"><span class="pre">retranslateUi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">DialogPreferences</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.preferencesDialogUi.Ui_DialogPreferences.retranslateUi" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.dialogs.preferencesDialogUi.Ui_DialogPreferences.setupUi">
+<span class="sig-name descname"><span class="pre">setupUi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">DialogPreferences</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dialogs.preferencesDialogUi.Ui_DialogPreferences.setupUi" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-meggie.mainwindow.dialogs">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-meggie.mainwindow.dialogs" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="meggie.utilities.html" class="btn btn-neutral float-right" title="meggie.utilities package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="meggie.mainwindow.html" class="btn btn-neutral float-left" title="meggie.mainwindow package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, CIBR.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

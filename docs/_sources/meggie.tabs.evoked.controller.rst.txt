@@ -1,0 +1,21 @@
+meggie.tabs.evoked.controller package
+=====================================
+
+Submodules
+----------
+
+meggie.tabs.evoked.controller.evoked module
+-------------------------------------------
+
+.. automodule:: meggie.tabs.evoked.controller.evoked
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: meggie.tabs.evoked.controller
+   :members:
+   :undoc-members:
+   :show-inheritance:

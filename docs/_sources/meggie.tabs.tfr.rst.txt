@@ -1,0 +1,30 @@
+meggie.tabs.tfr package
+=======================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   meggie.tabs.tfr.controller
+   meggie.tabs.tfr.dialogs
+
+Submodules
+----------
+
+meggie.tabs.tfr.ui module
+-------------------------
+
+.. automodule:: meggie.tabs.tfr.ui
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: meggie.tabs.tfr
+   :members:
+   :undoc-members:
+   :show-inheritance:

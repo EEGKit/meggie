@@ -1,0 +1,21 @@
+meggie.datatypes.spectrum package
+=================================
+
+Submodules
+----------
+
+meggie.datatypes.spectrum.spectrum module
+-----------------------------------------
+
+.. automodule:: meggie.datatypes.spectrum.spectrum
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: meggie.datatypes.spectrum
+   :members:
+   :undoc-members:
+   :show-inheritance:

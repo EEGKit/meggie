@@ -1,0 +1,21 @@
+meggie.tabs.spectrum.controller package
+=======================================
+
+Submodules
+----------
+
+meggie.tabs.spectrum.controller.spectrum module
+-----------------------------------------------
+
+.. automodule:: meggie.tabs.spectrum.controller.spectrum
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: meggie.tabs.spectrum.controller
+   :members:
+   :undoc-members:
+   :show-inheritance:

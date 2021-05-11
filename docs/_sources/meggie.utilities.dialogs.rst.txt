@@ -1,0 +1,85 @@
+meggie.utilities.dialogs package
+================================
+
+Submodules
+----------
+
+meggie.utilities.dialogs.bitSelectionDialogMain module
+------------------------------------------------------
+
+.. automodule:: meggie.utilities.dialogs.bitSelectionDialogMain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.utilities.dialogs.groupSelectionDialogMain module
+--------------------------------------------------------
+
+.. automodule:: meggie.utilities.dialogs.groupSelectionDialogMain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.utilities.dialogs.outputOptionsMain module
+-------------------------------------------------
+
+.. automodule:: meggie.utilities.dialogs.outputOptionsMain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.utilities.dialogs.permutationTestDialogMain module
+---------------------------------------------------------
+
+.. automodule:: meggie.utilities.dialogs.permutationTestDialogMain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.utilities.dialogs.powerSpectrumAddAdvancedDialogMain module
+------------------------------------------------------------------
+
+.. automodule:: meggie.utilities.dialogs.powerSpectrumAddAdvancedDialogMain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.utilities.dialogs.powerSpectrumDialogMain module
+-------------------------------------------------------
+
+.. automodule:: meggie.utilities.dialogs.powerSpectrumDialogMain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.utilities.dialogs.shortMessageBoxMain module
+---------------------------------------------------
+
+.. automodule:: meggie.utilities.dialogs.shortMessageBoxMain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.utilities.dialogs.shortQuestionBoxMain module
+----------------------------------------------------
+
+.. automodule:: meggie.utilities.dialogs.shortQuestionBoxMain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.utilities.dialogs.singleChannelDialogMain module
+-------------------------------------------------------
+
+.. automodule:: meggie.utilities.dialogs.singleChannelDialogMain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: meggie.utilities.dialogs
+   :members:
+   :undoc-members:
+   :show-inheritance:

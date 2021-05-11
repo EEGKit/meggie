@@ -1,0 +1,158 @@
+meggie.utilities package
+========================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   meggie.utilities.dialogs
+   meggie.utilities.widgets
+
+Submodules
+----------
+
+meggie.utilities.channels module
+--------------------------------
+
+.. automodule:: meggie.utilities.channels
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.utilities.compare module
+-------------------------------
+
+.. automodule:: meggie.utilities.compare
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.utilities.datatype module
+--------------------------------
+
+.. automodule:: meggie.utilities.datatype
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.utilities.debug module
+-----------------------------
+
+.. automodule:: meggie.utilities.debug
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.utilities.decorators module
+----------------------------------
+
+.. automodule:: meggie.utilities.decorators
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.utilities.events module
+------------------------------
+
+.. automodule:: meggie.utilities.events
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.utilities.filemanager module
+-----------------------------------
+
+.. automodule:: meggie.utilities.filemanager
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.utilities.formats module
+-------------------------------
+
+.. automodule:: meggie.utilities.formats
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.utilities.generate\_experiments module
+---------------------------------------------
+
+.. automodule:: meggie.utilities.generate_experiments
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.utilities.measurement\_info module
+-----------------------------------------
+
+.. automodule:: meggie.utilities.measurement_info
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.utilities.messaging module
+---------------------------------
+
+.. automodule:: meggie.utilities.messaging
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.utilities.names module
+-----------------------------
+
+.. automodule:: meggie.utilities.names
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.utilities.plotting module
+--------------------------------
+
+.. automodule:: meggie.utilities.plotting
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.utilities.smooth module
+------------------------------
+
+.. automodule:: meggie.utilities.smooth
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.utilities.stats module
+-----------------------------
+
+.. automodule:: meggie.utilities.stats
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.utilities.units module
+-----------------------------
+
+.. automodule:: meggie.utilities.units
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.utilities.validators module
+----------------------------------
+
+.. automodule:: meggie.utilities.validators
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: meggie.utilities
+   :members:
+   :undoc-members:
+   :show-inheritance:

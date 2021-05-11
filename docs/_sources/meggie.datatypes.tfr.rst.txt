@@ -1,0 +1,21 @@
+meggie.datatypes.tfr package
+============================
+
+Submodules
+----------
+
+meggie.datatypes.tfr.tfr module
+-------------------------------
+
+.. automodule:: meggie.datatypes.tfr.tfr
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: meggie.datatypes.tfr
+   :members:
+   :undoc-members:
+   :show-inheritance:

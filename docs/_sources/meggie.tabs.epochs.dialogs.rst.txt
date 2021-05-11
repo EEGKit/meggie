@@ -1,0 +1,29 @@
+meggie.tabs.epochs.dialogs package
+==================================
+
+Submodules
+----------
+
+meggie.tabs.epochs.dialogs.createEpochsFromEventsDialogMain module
+------------------------------------------------------------------
+
+.. automodule:: meggie.tabs.epochs.dialogs.createEpochsFromEventsDialogMain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.tabs.epochs.dialogs.createEpochsFromEventsDialogUi module
+----------------------------------------------------------------
+
+.. automodule:: meggie.tabs.epochs.dialogs.createEpochsFromEventsDialogUi
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: meggie.tabs.epochs.dialogs
+   :members:
+   :undoc-members:
+   :show-inheritance:

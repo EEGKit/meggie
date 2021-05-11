@@ -1,0 +1,21 @@
+meggie.utilities.widgets package
+================================
+
+Submodules
+----------
+
+meggie.utilities.widgets.batchingWidgetMain module
+--------------------------------------------------
+
+.. automodule:: meggie.utilities.widgets.batchingWidgetMain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: meggie.utilities.widgets
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,46 @@
+meggie package
+==============
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   meggie.datatypes
+   meggie.utilities
+
+Submodules
+----------
+
+meggie.experiment module
+------------------------
+
+.. automodule:: meggie.experiment
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.run module
+-----------------
+
+.. automodule:: meggie.run
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.subject module
+---------------------
+
+.. automodule:: meggie.subject
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: meggie
+   :members:
+   :undoc-members:
+   :show-inheritance:

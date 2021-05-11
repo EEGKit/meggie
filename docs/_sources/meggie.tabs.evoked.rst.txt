@@ -1,0 +1,30 @@
+meggie.tabs.evoked package
+==========================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   meggie.tabs.evoked.controller
+   meggie.tabs.evoked.dialogs
+
+Submodules
+----------
+
+meggie.tabs.evoked.ui module
+----------------------------
+
+.. automodule:: meggie.tabs.evoked.ui
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: meggie.tabs.evoked
+   :members:
+   :undoc-members:
+   :show-inheritance:

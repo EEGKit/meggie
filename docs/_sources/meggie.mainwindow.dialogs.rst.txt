@@ -1,0 +1,125 @@
+meggie.mainwindow.dialogs package
+=================================
+
+Submodules
+----------
+
+meggie.mainwindow.dialogs.aboutDialogMain module
+------------------------------------------------
+
+.. automodule:: meggie.mainwindow.dialogs.aboutDialogMain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.mainwindow.dialogs.aboutDialogUi module
+----------------------------------------------
+
+.. automodule:: meggie.mainwindow.dialogs.aboutDialogUi
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.mainwindow.dialogs.addSubjectDialogMain module
+-----------------------------------------------------
+
+.. automodule:: meggie.mainwindow.dialogs.addSubjectDialogMain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.mainwindow.dialogs.addSubjectDialogUi module
+---------------------------------------------------
+
+.. automodule:: meggie.mainwindow.dialogs.addSubjectDialogUi
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.mainwindow.dialogs.channelGroupsDialogMain module
+--------------------------------------------------------
+
+.. automodule:: meggie.mainwindow.dialogs.channelGroupsDialogMain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.mainwindow.dialogs.channelGroupsDialogUi module
+------------------------------------------------------
+
+.. automodule:: meggie.mainwindow.dialogs.channelGroupsDialogUi
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.mainwindow.dialogs.createExperimentDialogMain module
+-----------------------------------------------------------
+
+.. automodule:: meggie.mainwindow.dialogs.createExperimentDialogMain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.mainwindow.dialogs.createExperimentDialogUi module
+---------------------------------------------------------
+
+.. automodule:: meggie.mainwindow.dialogs.createExperimentDialogUi
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.mainwindow.dialogs.customTabsDialogMain module
+-----------------------------------------------------
+
+.. automodule:: meggie.mainwindow.dialogs.customTabsDialogMain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.mainwindow.dialogs.customTabsDialogUi module
+---------------------------------------------------
+
+.. automodule:: meggie.mainwindow.dialogs.customTabsDialogUi
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.mainwindow.dialogs.logDialogMain module
+----------------------------------------------
+
+.. automodule:: meggie.mainwindow.dialogs.logDialogMain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.mainwindow.dialogs.logDialogUi module
+--------------------------------------------
+
+.. automodule:: meggie.mainwindow.dialogs.logDialogUi
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.mainwindow.dialogs.preferencesDialogMain module
+------------------------------------------------------
+
+.. automodule:: meggie.mainwindow.dialogs.preferencesDialogMain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.mainwindow.dialogs.preferencesDialogUi module
+----------------------------------------------------
+
+.. automodule:: meggie.mainwindow.dialogs.preferencesDialogUi
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: meggie.mainwindow.dialogs
+   :members:
+   :undoc-members:
+   :show-inheritance:

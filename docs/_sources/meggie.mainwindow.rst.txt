@@ -1,0 +1,45 @@
+meggie.mainwindow package
+=========================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   meggie.mainwindow.dialogs
+
+Submodules
+----------
+
+meggie.mainwindow.dynamic module
+--------------------------------
+
+.. automodule:: meggie.mainwindow.dynamic
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.mainwindow.mne\_wrapper module
+-------------------------------------
+
+.. automodule:: meggie.mainwindow.mne_wrapper
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.mainwindow.preferences module
+------------------------------------
+
+.. automodule:: meggie.mainwindow.preferences
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: meggie.mainwindow
+   :members:
+   :undoc-members:
+   :show-inheritance:

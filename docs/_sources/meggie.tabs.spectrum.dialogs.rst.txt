@@ -1,0 +1,10 @@
+meggie.tabs.spectrum.dialogs package
+====================================
+
+Module contents
+---------------
+
+.. automodule:: meggie.tabs.spectrum.dialogs
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,45 @@
+meggie.tabs.tfr.dialogs package
+===============================
+
+Submodules
+----------
+
+meggie.tabs.tfr.dialogs.TFRDialogMain module
+--------------------------------------------
+
+.. automodule:: meggie.tabs.tfr.dialogs.TFRDialogMain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.tabs.tfr.dialogs.TFRDialogUi module
+------------------------------------------
+
+.. automodule:: meggie.tabs.tfr.dialogs.TFRDialogUi
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.tabs.tfr.dialogs.TFROutputOptionsMain module
+---------------------------------------------------
+
+.. automodule:: meggie.tabs.tfr.dialogs.TFROutputOptionsMain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.tabs.tfr.dialogs.TFROutputOptionsUi module
+-------------------------------------------------
+
+.. automodule:: meggie.tabs.tfr.dialogs.TFROutputOptionsUi
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: meggie.tabs.tfr.dialogs
+   :members:
+   :undoc-members:
+   :show-inheritance:

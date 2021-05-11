@@ -1,0 +1,29 @@
+meggie.tabs.preprocessing.controller package
+============================================
+
+Submodules
+----------
+
+meggie.tabs.preprocessing.controller.filter module
+--------------------------------------------------
+
+.. automodule:: meggie.tabs.preprocessing.controller.filter
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.tabs.preprocessing.controller.ica module
+-----------------------------------------------
+
+.. automodule:: meggie.tabs.preprocessing.controller.ica
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: meggie.tabs.preprocessing.controller
+   :members:
+   :undoc-members:
+   :show-inheritance:

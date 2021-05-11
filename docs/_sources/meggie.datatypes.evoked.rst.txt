@@ -1,0 +1,21 @@
+meggie.datatypes.evoked package
+===============================
+
+Submodules
+----------
+
+meggie.datatypes.evoked.evoked module
+-------------------------------------
+
+.. automodule:: meggie.datatypes.evoked.evoked
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: meggie.datatypes.evoked
+   :members:
+   :undoc-members:
+   :show-inheritance:

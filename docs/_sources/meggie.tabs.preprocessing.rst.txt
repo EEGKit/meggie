@@ -1,0 +1,29 @@
+meggie.tabs.preprocessing package
+=================================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   meggie.tabs.preprocessing.controller
+
+Submodules
+----------
+
+meggie.tabs.preprocessing.ui module
+-----------------------------------
+
+.. automodule:: meggie.tabs.preprocessing.ui
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: meggie.tabs.preprocessing
+   :members:
+   :undoc-members:
+   :show-inheritance:

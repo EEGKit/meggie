@@ -1,0 +1,364 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Architecture &mdash; Meggie 1.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/styles.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="meggie" href="modules.html" />
+    <link rel="prev" title="Developer wiki" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Architecture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#main-classes">Main classes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#mainwindow">MainWindow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#experiment">Experiment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#subject">Subject</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tabs-and-datatypes">Tabs and datatypes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#datatypes">Datatypes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tabs">Tabs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#plugins">Plugins</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#simplest-possible-plugin">Simplest possible plugin</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">meggie</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Meggie</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Architecture</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/architecture.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="architecture">
+<h1>Architecture<a class="headerlink" href="#architecture" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="main-classes">
+<h2>Main classes<a class="headerlink" href="#main-classes" title="Permalink to this headline">¶</a></h2>
+<p>There are three basic structures in Meggie.</p>
+<div class="section" id="mainwindow">
+<h3>MainWindow<a class="headerlink" href="#mainwindow" title="Permalink to this headline">¶</a></h3>
+<p>MainWindow contains the user interface.</p>
+</div>
+<div class="section" id="experiment">
+<h3>Experiment<a class="headerlink" href="#experiment" title="Permalink to this headline">¶</a></h3>
+<p>Experiment contains the highest-level container for all the data.</p>
+</div>
+<div class="section" id="subject">
+<h3>Subject<a class="headerlink" href="#subject" title="Permalink to this headline">¶</a></h3>
+<p>Subjects are added to experiments and store subject-specific data.</p>
+</div>
+</div>
+<div class="section" id="tabs-and-datatypes">
+<h2>Tabs and datatypes<a class="headerlink" href="#tabs-and-datatypes" title="Permalink to this headline">¶</a></h2>
+<p>Analysis functionality is based on two key structures, datatypes and tabs.</p>
+<div class="section" id="datatypes">
+<h3>Datatypes<a class="headerlink" href="#datatypes" title="Permalink to this headline">¶</a></h3>
+<p>Datatypes can store objects created from subject-specific data.
+created from the subject-specific data.</p>
+</div>
+<div class="section" id="tabs">
+<h3>Tabs<a class="headerlink" href="#tabs" title="Permalink to this headline">¶</a></h3>
+<p>Tabs provide implementations for the analysis actions.</p>
+</div>
+</div>
+<div class="section" id="plugins">
+<h2>Plugins<a class="headerlink" href="#plugins" title="Permalink to this headline">¶</a></h2>
+<p>Creation of plugins is simple and fun. Datatypes and tabs are dynamically located at the runtime and are loadable from other python packages from meggie_* namespace.</p>
+<div class="section" id="simplest-possible-plugin">
+<h3>Simplest possible plugin<a class="headerlink" href="#simplest-possible-plugin" title="Permalink to this headline">¶</a></h3>
+<p>To create a plugin, start by bootstrapping a package with this structure:</p>
+<ul>
+<li><p>meggie_simpleplugin</p>
+<blockquote>
+<div><ul>
+<li><p>MANIFEST.in</p></li>
+<li><p>setup.py</p></li>
+<li><p>meggie_simplelugin</p>
+<blockquote>
+<div><ul>
+<li><p>configuration.json</p></li>
+<li><p>tabs</p>
+<blockquote>
+<div><ul>
+<li><p>simpleplugin</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>configuration.json</p></li>
+<li><p>ui.py</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>MANIFEST.in and setup.py are standard files in python packaging. MANIFEST.in lists
+what files inside the subdirectories should be included and what should be excluded when
+installing the package. setup.py contains the installation script with some metadata and
+flags. Let us use trivial ones.
+MANIFEST.in:</p>
+<div class="codelisting docutils container">
+<ul class="simple">
+<li><p>recursive-include meggie_simpleplugin *</p></li>
+<li><p>global-exclude *.py[co]</p></li>
+<li><p>global exclude __pycache__</p></li>
+</ul>
+</div>
+<p>setup.py:</p>
+<div class="codelisting docutils container">
+<ul>
+<li><p>from setuptools import setup</p></li>
+<li><p>setup(</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>name=’meggie_simpleplugin’,</p></li>
+<li><p>version=’0.1.0’,</p></li>
+<li><p>license=’BSD’,</p></li>
+<li><p>packages=[‘meggie_simpleplugin’],</p></li>
+<li><p>include_package_data=True,</p></li>
+<li><p>zip_safe=False,</p></li>
+<li><p>install_requires=[‘setuptools’])</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<p>Next, configuration.json declares the name and description of the plugin.</p>
+<div class="codelisting docutils container">
+<ul class="simple">
+<li><p>{“name”: “meggie_simpleplugin”,</p></li>
+<li><p>“description”: “The most simple possible meggie plugin”}</p></li>
+</ul>
+</div>
+<p>The plugin introduces a tab, and a tab needs a declaration in the
+meggie_simpleplugin/tabs/simpleplugin/configuration.json file:</p>
+<div class="codelisting docutils container">
+<ul class="simple">
+<li><p>{“id”: “simpleplugin”,</p></li>
+<li><p>“name”: “Simple plugin”,</p></li>
+<li><p>“actions”: [“hello”]}</p></li>
+</ul>
+</div>
+<p>The tab introduces an action that needs implementation in ui.py:</p>
+<div class="codelisting docutils container">
+<ul>
+<li><p>from meggie.utilities.messaging import messagebox</p></li>
+<li><p>def hello(experiment, data, window):</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>“”” Helloes the active subject.</p></li>
+<li><p>“””</p></li>
+<li><p>message = ‘Hello {}!’.format(experiment.active_subject.name)</p></li>
+<li><p>messagebox(window, message)</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<p>That’s it! The code is available in <a class="reference external" href="https://github.com/Teekuningas/meggie_simpleplugin">here.</a>.
+To see it in use, see <a class="reference external" href="https://meggie.teekuningas.net">this.</a>.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="modules.html" class="btn btn-neutral float-right" title="meggie" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Developer wiki" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, CIBR.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+meggie.tabs package
+===================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   meggie.tabs.epochs
+   meggie.tabs.evoked
+   meggie.tabs.preprocessing
+   meggie.tabs.spectrum
+   meggie.tabs.tfr
+
+Module contents
+---------------
+
+.. automodule:: meggie.tabs
+   :members:
+   :undoc-members:
+   :show-inheritance:

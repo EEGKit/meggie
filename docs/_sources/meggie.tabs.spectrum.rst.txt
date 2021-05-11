@@ -1,0 +1,30 @@
+meggie.tabs.spectrum package
+============================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   meggie.tabs.spectrum.controller
+   meggie.tabs.spectrum.dialogs
+
+Submodules
+----------
+
+meggie.tabs.spectrum.ui module
+------------------------------
+
+.. automodule:: meggie.tabs.spectrum.ui
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: meggie.tabs.spectrum
+   :members:
+   :undoc-members:
+   :show-inheritance:

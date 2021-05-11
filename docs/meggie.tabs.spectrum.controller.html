@@ -1,0 +1,264 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>meggie.tabs.spectrum.controller package &mdash; Meggie 1.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="meggie.tabs.spectrum.dialogs package" href="meggie.tabs.spectrum.dialogs.html" />
+    <link rel="prev" title="meggie.tabs.spectrum package" href="meggie.tabs.spectrum.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Architecture</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">meggie</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="meggie.html">meggie package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="meggie.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="meggie.datatypes.html">meggie.datatypes package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.mainwindow.html">meggie.mainwindow package</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="meggie.tabs.html">meggie.tabs package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.utilities.html">meggie.utilities package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie.experiment">meggie.experiment module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie.mainWindowMain">meggie.mainWindowMain module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie.mainWindowUi">meggie.mainWindowUi module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie.run">meggie.run module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie.subject">meggie.subject module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Meggie</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">meggie</a> &raquo;</li>
+        
+          <li><a href="meggie.html">meggie package</a> &raquo;</li>
+        
+          <li><a href="meggie.tabs.html">meggie.tabs package</a> &raquo;</li>
+        
+          <li><a href="meggie.tabs.spectrum.html">meggie.tabs.spectrum package</a> &raquo;</li>
+        
+      <li>meggie.tabs.spectrum.controller package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/meggie.tabs.spectrum.controller.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="meggie-tabs-spectrum-controller-package">
+<h1>meggie.tabs.spectrum.controller package<a class="headerlink" href="#meggie-tabs-spectrum-controller-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-meggie.tabs.spectrum.controller.spectrum">
+<span id="meggie-tabs-spectrum-controller-spectrum-module"></span><h2>meggie.tabs.spectrum.controller.spectrum module<a class="headerlink" href="#module-meggie.tabs.spectrum.controller.spectrum" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="meggie.tabs.spectrum.controller.spectrum.plot_spectrum_averages">
+<span class="sig-prename descclassname"><span class="pre">meggie.tabs.spectrum.controller.spectrum.</span></span><span class="sig-name descname"><span class="pre">plot_spectrum_averages</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">experiment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_transformed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.tabs.spectrum.controller.spectrum.plot_spectrum_averages" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="meggie.tabs.spectrum.controller.spectrum.plot_spectrum_topo">
+<span class="sig-prename descclassname"><span class="pre">meggie.tabs.spectrum.controller.spectrum.</span></span><span class="sig-name descname"><span class="pre">plot_spectrum_topo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">experiment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_transformed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ch_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'meg'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.tabs.spectrum.controller.spectrum.plot_spectrum_topo" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="meggie.tabs.spectrum.controller.spectrum.run_permutation_test">
+<span class="sig-prename descclassname"><span class="pre">meggie.tabs.spectrum.controller.spectrum.</span></span><span class="sig-name descname"><span class="pre">run_permutation_test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">experiment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">window</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">selected_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_limits</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency_limits</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location_limits</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">significance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_permutations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">design</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.tabs.spectrum.controller.spectrum.run_permutation_test" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-meggie.tabs.spectrum.controller">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-meggie.tabs.spectrum.controller" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="meggie.tabs.spectrum.dialogs.html" class="btn btn-neutral float-right" title="meggie.tabs.spectrum.dialogs package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="meggie.tabs.spectrum.html" class="btn btn-neutral float-left" title="meggie.tabs.spectrum package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, CIBR.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,390 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>meggie.mainwindow package &mdash; Meggie 1.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="meggie.mainwindow.dialogs package" href="meggie.mainwindow.dialogs.html" />
+    <link rel="prev" title="meggie.datatypes.tfr package" href="meggie.datatypes.tfr.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Architecture</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">meggie</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="meggie.html">meggie package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="meggie.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="meggie.datatypes.html">meggie.datatypes package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">meggie.mainwindow package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.utilities.html">meggie.utilities package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie.experiment">meggie.experiment module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie.mainWindowMain">meggie.mainWindowMain module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie.mainWindowUi">meggie.mainWindowUi module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie.run">meggie.run module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie.subject">meggie.subject module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Meggie</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">meggie</a> &raquo;</li>
+        
+          <li><a href="meggie.html">meggie package</a> &raquo;</li>
+        
+      <li>meggie.mainwindow package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/meggie.mainwindow.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="meggie-mainwindow-package">
+<h1>meggie.mainwindow package<a class="headerlink" href="#meggie-mainwindow-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="meggie.mainwindow.dialogs.html">meggie.mainwindow.dialogs package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="meggie.mainwindow.dialogs.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.mainwindow.dialogs.html#module-meggie.mainwindow.dialogs.aboutDialogMain">meggie.mainwindow.dialogs.aboutDialogMain module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.mainwindow.dialogs.html#module-meggie.mainwindow.dialogs.aboutDialogUi">meggie.mainwindow.dialogs.aboutDialogUi module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.mainwindow.dialogs.html#module-meggie.mainwindow.dialogs.addSubjectDialogMain">meggie.mainwindow.dialogs.addSubjectDialogMain module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.mainwindow.dialogs.html#module-meggie.mainwindow.dialogs.addSubjectDialogUi">meggie.mainwindow.dialogs.addSubjectDialogUi module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.mainwindow.dialogs.html#module-meggie.mainwindow.dialogs.channelGroupsDialogMain">meggie.mainwindow.dialogs.channelGroupsDialogMain module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.mainwindow.dialogs.html#module-meggie.mainwindow.dialogs.channelGroupsDialogUi">meggie.mainwindow.dialogs.channelGroupsDialogUi module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.mainwindow.dialogs.html#module-meggie.mainwindow.dialogs.createExperimentDialogMain">meggie.mainwindow.dialogs.createExperimentDialogMain module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.mainwindow.dialogs.html#module-meggie.mainwindow.dialogs.createExperimentDialogUi">meggie.mainwindow.dialogs.createExperimentDialogUi module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.mainwindow.dialogs.html#module-meggie.mainwindow.dialogs.customTabsDialogMain">meggie.mainwindow.dialogs.customTabsDialogMain module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.mainwindow.dialogs.html#module-meggie.mainwindow.dialogs.customTabsDialogUi">meggie.mainwindow.dialogs.customTabsDialogUi module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.mainwindow.dialogs.html#module-meggie.mainwindow.dialogs.logDialogMain">meggie.mainwindow.dialogs.logDialogMain module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.mainwindow.dialogs.html#module-meggie.mainwindow.dialogs.logDialogUi">meggie.mainwindow.dialogs.logDialogUi module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.mainwindow.dialogs.html#module-meggie.mainwindow.dialogs.preferencesDialogMain">meggie.mainwindow.dialogs.preferencesDialogMain module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.mainwindow.dialogs.html#module-meggie.mainwindow.dialogs.preferencesDialogUi">meggie.mainwindow.dialogs.preferencesDialogUi module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meggie.mainwindow.dialogs.html#module-meggie.mainwindow.dialogs">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-meggie.mainwindow.dynamic">
+<span id="meggie-mainwindow-dynamic-module"></span><h2>meggie.mainwindow.dynamic module<a class="headerlink" href="#module-meggie.mainwindow.dynamic" title="Permalink to this headline">¶</a></h2>
+<p>Contains functions that are used in the dynamic location and creation
+of tabs and datatypes. Can be used both internally and externally.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="meggie.mainwindow.dynamic.construct_tab">
+<span class="sig-prename descclassname"><span class="pre">meggie.mainwindow.dynamic.</span></span><span class="sig-name descname"><span class="pre">construct_tab</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">package</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tab_spec</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dynamic.construct_tab" title="Permalink to this definition">¶</a></dt>
+<dd><p>Constructs analysis tab dynamically from python package
+containing an configuration file and code. Returns a QDialog
+that can be used within a QTabDialog of the main window.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>source</strong> (<em>str</em>) – Name of the module, should be meggie or meggie_*.</p></li>
+<li><p><strong>package</strong> (<em>str</em>) – Name of the tab, e.g. evoked or preprocessing.</p></li>
+<li><p><strong>tab_spec</strong> (<em>dict</em>) – The configuration.json of the tab read to a dict.</p></li>
+<li><p><strong>parent</strong> (<em>instance of main window</em>) – The main window, is passed to the handlers in the ui.py.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The constructed tab than can be added to
+main window.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>instance of QDialog</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="meggie.mainwindow.dynamic.find_all_plugins">
+<span class="sig-prename descclassname"><span class="pre">meggie.mainwindow.dynamic.</span></span><span class="sig-name descname"><span class="pre">find_all_plugins</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dynamic.find_all_plugins" title="Permalink to this definition">¶</a></dt>
+<dd><p>Looks for plugins (installed packages with name meggie_*), that
+can contain tabs or datatypes</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="meggie.mainwindow.dynamic.find_all_sources">
+<span class="sig-prename descclassname"><span class="pre">meggie.mainwindow.dynamic.</span></span><span class="sig-name descname"><span class="pre">find_all_sources</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dynamic.find_all_sources" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns all packages where to look for tabs / datatypes.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="meggie.mainwindow.dynamic.find_all_tab_specs">
+<span class="sig-prename descclassname"><span class="pre">meggie.mainwindow.dynamic.</span></span><span class="sig-name descname"><span class="pre">find_all_tab_specs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.dynamic.find_all_tab_specs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Finds all valid tabs from the core and plugins.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-meggie.mainwindow.mne_wrapper">
+<span id="meggie-mainwindow-mne-wrapper-module"></span><h2>meggie.mainwindow.mne_wrapper module<a class="headerlink" href="#module-meggie.mainwindow.mne_wrapper" title="Permalink to this headline">¶</a></h2>
+<p>Wraps mne functions to log calls and parameters whenever called.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="meggie.mainwindow.mne_wrapper.wrap">
+<span class="sig-prename descclassname"><span class="pre">meggie.mainwindow.mne_wrapper.</span></span><span class="sig-name descname"><span class="pre">wrap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">log_level</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">original_func</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.mne_wrapper.wrap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wraps a given function to log that the call is gonna happen
+before the call is made. Wrapping is done with a specific log level.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>log_level</strong> (<em>str</em>) – Should be debug, info, warning, error, etc.</p></li>
+<li><p><strong>original_func</strong> (<em>function</em>) – The function to be wrapped.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The wrapped function.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>function</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="meggie.mainwindow.mne_wrapper.wrap_mne">
+<span class="sig-prename descclassname"><span class="pre">meggie.mainwindow.mne_wrapper.</span></span><span class="sig-name descname"><span class="pre">wrap_mne</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.mne_wrapper.wrap_mne" title="Permalink to this definition">¶</a></dt>
+<dd><p>Goes recursively through mne package and wraps non-blacklisted
+functions so that they will get logged by meggie.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="meggie.mainwindow.mne_wrapper.wrap_package">
+<span class="sig-prename descclassname"><span class="pre">meggie.mainwindow.mne_wrapper.</span></span><span class="sig-name descname"><span class="pre">wrap_package</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">root</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.mne_wrapper.wrap_package" title="Permalink to this definition">¶</a></dt>
+<dd><p>A package wrapping function that can be
+called recursively.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>root</strong> (<em>str</em>) – Root of the package, e.g mne.preprocessing.</p></li>
+<li><p><strong>path</strong> (<em>list</em>) – A list containing the path to the package, e.g. [“/path_to_mne/preprocessing”].</p></li>
+<li><p><strong>prefix</strong> (<em>str</em>) – Path to the original root, e.g. “/path_to_mne”. This ensures that walk_packages does not
+walk out of the folder of interest due to a bug.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-meggie.mainwindow.preferences">
+<span id="meggie-mainwindow-preferences-module"></span><h2>meggie.mainwindow.preferences module<a class="headerlink" href="#module-meggie.mainwindow.preferences" title="Permalink to this headline">¶</a></h2>
+<p>Contains a class for handling reading and storing of
+global preferences such as the previous experiment and
+the tab settings. Normally saved to ~/.meggieprefs.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="meggie.mainwindow.preferences.PreferencesHandler">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">meggie.mainwindow.preferences.</span></span><span class="sig-name descname"><span class="pre">PreferencesHandler</span></span><a class="headerlink" href="#meggie.mainwindow.preferences.PreferencesHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for storing and setting preferences.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.preferences.PreferencesHandler.read_preferences_from_disk">
+<span class="sig-name descname"><span class="pre">read_preferences_from_disk</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.preferences.PreferencesHandler.read_preferences_from_disk" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads the preferences from file system into attributes.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainwindow.preferences.PreferencesHandler.write_preferences_to_disk">
+<span class="sig-name descname"><span class="pre">write_preferences_to_disk</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainwindow.preferences.PreferencesHandler.write_preferences_to_disk" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes the preferences to file system, in INI style.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-meggie.mainwindow">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-meggie.mainwindow" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="meggie.mainwindow.dialogs.html" class="btn btn-neutral float-right" title="meggie.mainwindow.dialogs package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="meggie.datatypes.tfr.html" class="btn btn-neutral float-left" title="meggie.datatypes.tfr package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, CIBR.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+meggie.datatypes.epochs package
+===============================
+
+Submodules
+----------
+
+meggie.datatypes.epochs.epochs module
+-------------------------------------
+
+.. automodule:: meggie.datatypes.epochs.epochs
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: meggie.datatypes.epochs
+   :members:
+   :undoc-members:
+   :show-inheritance:

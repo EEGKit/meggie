@@ -1,0 +1,45 @@
+meggie.tabs.evoked.dialogs package
+==================================
+
+Submodules
+----------
+
+meggie.tabs.evoked.dialogs.createEvokedDialogMain module
+--------------------------------------------------------
+
+.. automodule:: meggie.tabs.evoked.dialogs.createEvokedDialogMain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.tabs.evoked.dialogs.createEvokedDialogUi module
+------------------------------------------------------
+
+.. automodule:: meggie.tabs.evoked.dialogs.createEvokedDialogUi
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.tabs.evoked.dialogs.evokedTopomapDialogMain module
+---------------------------------------------------------
+
+.. automodule:: meggie.tabs.evoked.dialogs.evokedTopomapDialogMain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.tabs.evoked.dialogs.evokedTopomapDialogUi module
+-------------------------------------------------------
+
+.. automodule:: meggie.tabs.evoked.dialogs.evokedTopomapDialogUi
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: meggie.tabs.evoked.dialogs
+   :members:
+   :undoc-members:
+   :show-inheritance:

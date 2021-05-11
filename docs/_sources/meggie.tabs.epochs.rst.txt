@@ -1,0 +1,30 @@
+meggie.tabs.epochs package
+==========================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   meggie.tabs.epochs.controller
+   meggie.tabs.epochs.dialogs
+
+Submodules
+----------
+
+meggie.tabs.epochs.ui module
+----------------------------
+
+.. automodule:: meggie.tabs.epochs.ui
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: meggie.tabs.epochs
+   :members:
+   :undoc-members:
+   :show-inheritance:

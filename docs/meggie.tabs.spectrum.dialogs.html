@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Developer wiki &mdash; Meggie 1.1 documentation</title>
+  <title>meggie.tabs.spectrum.dialogs package &mdash; Meggie 1.1 documentation</title>
   
 
   
@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/styles.css" type="text/css" />
 
   
   
@@ -42,7 +41,8 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Architecture" href="architecture.html" /> 
+    <link rel="next" title="meggie.tabs.tfr package" href="meggie.tabs.tfr.html" />
+    <link rel="prev" title="meggie.tabs.spectrum.controller package" href="meggie.tabs.spectrum.controller.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -56,7 +56,7 @@
           
 
           
-            <a href="#">
+            <a href="index.html">
           
 
           
@@ -88,9 +88,28 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="architecture.html">Architecture</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules.html">meggie</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">meggie</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="meggie.html">meggie package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="meggie.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="meggie.datatypes.html">meggie.datatypes package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.mainwindow.html">meggie.mainwindow package</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="meggie.tabs.html">meggie.tabs package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="meggie.utilities.html">meggie.utilities package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie.experiment">meggie.experiment module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie.mainWindowMain">meggie.mainWindowMain module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie.mainWindowUi">meggie.mainWindowUi module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie.run">meggie.run module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie.subject">meggie.subject module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="meggie.html#module-meggie">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             
@@ -106,7 +125,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">Meggie</a>
+          <a href="index.html">Meggie</a>
         
       </nav>
 
@@ -137,15 +156,23 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Developer wiki</li>
+          <li><a href="modules.html">meggie</a> &raquo;</li>
+        
+          <li><a href="meggie.html">meggie package</a> &raquo;</li>
+        
+          <li><a href="meggie.tabs.html">meggie.tabs package</a> &raquo;</li>
+        
+          <li><a href="meggie.tabs.spectrum.html">meggie.tabs.spectrum package</a> &raquo;</li>
+        
+      <li>meggie.tabs.spectrum.dialogs package</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/meggie.tabs.spectrum.dialogs.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -158,35 +185,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="developer-wiki">
-<h1>Developer wiki<a class="headerlink" href="#developer-wiki" title="Permalink to this headline">¶</a></h1>
-<p>Welcome to the Meggie developer wiki.</p>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="architecture.html">Architecture</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="architecture.html#main-classes">Main classes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="architecture.html#tabs-and-datatypes">Tabs and datatypes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="architecture.html#plugins">Plugins</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="modules.html">meggie</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="meggie.html">meggie package</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="other-sources">
-<h2>Other sources<a class="headerlink" href="#other-sources" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="http://meggie.teekuningas.net">Documentation</a></p></li>
-</ul>
-</div>
-<div class="section" id="indices-and-tables">
-<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
-</ul>
+  <div class="section" id="meggie-tabs-spectrum-dialogs-package">
+<h1>meggie.tabs.spectrum.dialogs package<a class="headerlink" href="#meggie-tabs-spectrum-dialogs-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-meggie.tabs.spectrum.dialogs">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-meggie.tabs.spectrum.dialogs" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -196,7 +198,8 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="architecture.html" class="btn btn-neutral float-right" title="Architecture" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="meggie.tabs.tfr.html" class="btn btn-neutral float-right" title="meggie.tabs.tfr package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="meggie.tabs.spectrum.controller.html" class="btn btn-neutral float-left" title="meggie.tabs.spectrum.controller package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
