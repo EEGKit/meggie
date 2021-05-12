@@ -100,6 +100,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#module-meggie.experiment">meggie.experiment module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-meggie.mainWindowMain">meggie.mainWindowMain module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#module-meggie.run">meggie.run module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#module-meggie.subject">meggie.subject module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#module-meggie">Module contents</a></li>
@@ -424,6 +425,118 @@ the experiment directory structure.</p>
 </dd>
 </dl>
 </dd></dl>
+
+</div>
+<div class="section" id="module-meggie.mainWindowMain">
+<span id="meggie-mainwindowmain-module"></span><h2>meggie.mainWindowMain module<a class="headerlink" href="#module-meggie.mainWindowMain" title="Permalink to this headline">¶</a></h2>
+<p>Contains the class for main window logic.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="meggie.mainWindowMain.EmittingStream">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">meggie.mainWindowMain.</span></span><span class="sig-name descname"><span class="pre">EmittingStream</span></span><a class="headerlink" href="#meggie.mainWindowMain.EmittingStream" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtCore.QObject</span></code></p>
+<p>Helper class for console.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainWindowMain.EmittingStream.fileno">
+<span class="sig-name descname"><span class="pre">fileno</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainWindowMain.EmittingStream.fileno" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainWindowMain.EmittingStream.flush">
+<span class="sig-name descname"><span class="pre">flush</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainWindowMain.EmittingStream.flush" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="meggie.mainWindowMain.EmittingStream.textWritten">
+<span class="sig-name descname"><span class="pre">textWritten</span></span><a class="headerlink" href="#meggie.mainWindowMain.EmittingStream.textWritten" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainWindowMain.EmittingStream.write">
+<span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainWindowMain.EmittingStream.write" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="meggie.mainWindowMain.MainWindow">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">meggie.mainWindowMain.</span></span><span class="sig-name descname"><span class="pre">MainWindow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">application</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainWindowMain.MainWindow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QMainWindow</span></code></p>
+<p>Contains the main window logic and stores the experiment.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainWindowMain.MainWindow.initialize_ui">
+<span class="sig-name descname"><span class="pre">initialize_ui</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainWindowMain.MainWindow.initialize_ui" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes the main window UI view.</p>
+<p>Often used if the underlying experiment changes.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainWindowMain.MainWindow.on_actionAbout_triggered">
+<span class="sig-name descname"><span class="pre">on_actionAbout_triggered</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainWindowMain.MainWindow.on_actionAbout_triggered" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainWindowMain.MainWindow.on_actionCreateExperiment_triggered">
+<span class="sig-name descname"><span class="pre">on_actionCreateExperiment_triggered</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainWindowMain.MainWindow.on_actionCreateExperiment_triggered" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainWindowMain.MainWindow.on_actionOpenExperiment_triggered">
+<span class="sig-name descname"><span class="pre">on_actionOpenExperiment_triggered</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainWindowMain.MainWindow.on_actionOpenExperiment_triggered" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainWindowMain.MainWindow.on_actionPreferences_triggered">
+<span class="sig-name descname"><span class="pre">on_actionPreferences_triggered</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainWindowMain.MainWindow.on_actionPreferences_triggered" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainWindowMain.MainWindow.on_actionQuit_triggered">
+<span class="sig-name descname"><span class="pre">on_actionQuit_triggered</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainWindowMain.MainWindow.on_actionQuit_triggered" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainWindowMain.MainWindow.on_actionShowLog_triggered">
+<span class="sig-name descname"><span class="pre">on_actionShowLog_triggered</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainWindowMain.MainWindow.on_actionShowLog_triggered" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainWindowMain.MainWindow.on_pushButtonActivateSubject_clicked">
+<span class="sig-name descname"><span class="pre">on_pushButtonActivateSubject_clicked</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainWindowMain.MainWindow.on_pushButtonActivateSubject_clicked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainWindowMain.MainWindow.on_pushButtonAddSubjects_clicked">
+<span class="sig-name descname"><span class="pre">on_pushButtonAddSubjects_clicked</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainWindowMain.MainWindow.on_pushButtonAddSubjects_clicked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainWindowMain.MainWindow.on_pushButtonChannelGroups_clicked">
+<span class="sig-name descname"><span class="pre">on_pushButtonChannelGroups_clicked</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainWindowMain.MainWindow.on_pushButtonChannelGroups_clicked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainWindowMain.MainWindow.on_pushButtonRemoveSubject_clicked">
+<span class="sig-name descname"><span class="pre">on_pushButtonRemoveSubject_clicked</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainWindowMain.MainWindow.on_pushButtonRemoveSubject_clicked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainWindowMain.MainWindow.reconstruct_tabs">
+<span class="sig-name descname"><span class="pre">reconstruct_tabs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainWindowMain.MainWindow.reconstruct_tabs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reconstructs the tabs.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.mainWindowMain.MainWindow.update_ui">
+<span class="sig-name descname"><span class="pre">update_ui</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainWindowMain.MainWindow.update_ui" title="Permalink to this definition">¶</a></dt>
+<dd><p>Used for keeping the ui responsive when threading.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="meggie.mainWindowMain.main">
+<span class="sig-prename descclassname"><span class="pre">meggie.mainWindowMain.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#meggie.mainWindowMain.main" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 </div>
 <div class="section" id="module-meggie.run">

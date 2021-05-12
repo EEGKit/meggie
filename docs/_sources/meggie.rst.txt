@@ -21,6 +21,14 @@ meggie.experiment module
    :undoc-members:
    :show-inheritance:
 
+meggie.mainWindowMain module
+----------------------------
+
+.. automodule:: meggie.mainWindowMain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 meggie.run module
 -----------------
 
