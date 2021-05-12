@@ -266,61 +266,107 @@
 </div>
 <div class="section" id="module-meggie.experiment">
 <span id="meggie-experiment-module"></span><h2>meggie.experiment module<a class="headerlink" href="#module-meggie.experiment" title="Permalink to this headline">¶</a></h2>
+<p>Contains classes and functions for experiments.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="meggie.experiment.Experiment">
 <em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">meggie.experiment.</span></span><span class="sig-name descname"><span class="pre">Experiment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">author</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.experiment.Experiment" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>A top-level class that contains structure of an experiment,
 all the subjects within, and so forth.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>) – Name of the experiment</p></li>
+<li><p><strong>author</strong> (<em>str</em>) – Name of the author</p></li>
+<li><p><strong>path</strong> (<em>str</em>) – Path to the experiment folder.</p></li>
+</ul>
+</dd>
+</dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="meggie.experiment.Experiment.activate_subject">
 <span class="sig-name descname"><span class="pre">activate_subject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">subject_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.experiment.Experiment.activate_subject" title="Permalink to this definition">¶</a></dt>
 <dd><p>Activates a subject from the existing subjects</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>subject_name</strong> (<em>str</em>) – Name of the subject.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The activated subject.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#meggie.subject.Subject" title="meggie.subject.Subject">meggie.subject.Subject</a></p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="meggie.experiment.Experiment.active_subject">
 <em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">active_subject</span></span><a class="headerlink" href="#meggie.experiment.Experiment.active_subject" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Returns the active subject.</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="meggie.experiment.Experiment.add_subject">
 <span class="sig-name descname"><span class="pre">add_subject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">subject</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.experiment.Experiment.add_subject" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Adds subject to the experiment.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>subject</strong> (<a class="reference internal" href="#meggie.subject.Subject" title="meggie.subject.Subject"><em>meggie.subject.Subject</em></a>) – A subject object.</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="meggie.experiment.Experiment.author">
 <em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">author</span></span><a class="headerlink" href="#meggie.experiment.Experiment.author" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Returns the author.</p>
+</dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="meggie.experiment.Experiment.channel_groups">
 <em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">channel_groups</span></span><a class="headerlink" href="#meggie.experiment.Experiment.channel_groups" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Returns channel groups for experiment. If not set,
+uses defaults.</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="meggie.experiment.Experiment.create_subject">
 <span class="sig-name descname"><span class="pre">create_subject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">subject_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">raw_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.experiment.Experiment.create_subject" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creates a subject object and copies the raw file
-inside it (by reading and saving)</p>
+inside it (by reading and saving).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>subject_name</strong> (<em>str</em>) – Name of the new subject.</p></li>
+<li><p><strong>raw_path</strong> (<em>str</em>) – Path to the data file.</p></li>
+</ul>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="meggie.experiment.Experiment.name">
 <em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#meggie.experiment.Experiment.name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Returns the name.</p>
+</dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="meggie.experiment.Experiment.path">
 <em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">path</span></span><a class="headerlink" href="#meggie.experiment.Experiment.path" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Returns the path.</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="meggie.experiment.Experiment.remove_subject">
 <span class="sig-name descname"><span class="pre">remove_subject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.experiment.Experiment.remove_subject" title="Permalink to this definition">¶</a></dt>
-<dd><p>Removes the subject folder and its contents under experiment tree.
-Removes the subject information from experiment properties and updates
-the experiment settings file.</p>
+<dd><p>Removes a subject.</p>
+<p>Removes the subject folder and its contents under experiment tree, and
+removes the subject from the experiment.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>str</em>) – Name of the subject to be removed.</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -333,7 +379,8 @@ the experiment directory structure.</p>
 <dl class="py property">
 <dt class="sig sig-object py" id="meggie.experiment.Experiment.subjects">
 <em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">subjects</span></span><a class="headerlink" href="#meggie.experiment.Experiment.subjects" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Returns contained subjects.</p>
+</dd></dl>
 
 </dd></dl>
 
@@ -341,12 +388,42 @@ the experiment directory structure.</p>
 <dt class="sig sig-object py" id="meggie.experiment.initialize_new_experiment">
 <span class="sig-prename descclassname"><span class="pre">meggie.experiment.</span></span><span class="sig-name descname"><span class="pre">initialize_new_experiment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">author</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">set_previous_experiment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.experiment.initialize_new_experiment" title="Permalink to this definition">¶</a></dt>
 <dd><p>Initializes new experiment object with given data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>) – Name of the experiment.</p></li>
+<li><p><strong>author</strong> (<em>str</em>) – Name of the author.</p></li>
+<li><p><strong>prefs</strong> (<em>meggie.mainwindow.preferences.PreferencesHandler</em>) – A preferences object.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The new experiment.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#meggie.experiment.Experiment" title="meggie.experiment.Experiment">meggie.experiment.Experiment</a></p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="meggie.experiment.open_existing_experiment">
 <span class="sig-prename descclassname"><span class="pre">meggie.experiment.</span></span><span class="sig-name descname"><span class="pre">open_existing_experiment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prefs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.experiment.open_existing_experiment" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Reads and opens existing experiment.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>prefs</strong> (<em>meggie.mainwindow.preferences.PreferencesHandler</em>) – A preferences object.</p></li>
+<li><p><strong>path</strong> (<em>str</em><em>, </em><em>optional</em>) – Path to the experiment folder.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The opened experiment.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#meggie.experiment.Experiment" title="meggie.experiment.Experiment">meggie.experiment.Experiment</a></p>
+</dd>
+</dl>
+</dd></dl>
 
 </div>
 <div class="section" id="module-meggie.run">
@@ -361,50 +438,102 @@ the experiment directory structure.</p>
 </div>
 <div class="section" id="module-meggie.subject">
 <span id="meggie-subject-module"></span><h2>meggie.subject module<a class="headerlink" href="#module-meggie.subject" title="Permalink to this headline">¶</a></h2>
+<p>Contains a class for logic of the Subjects.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="meggie.subject.Subject">
 <em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">meggie.subject.</span></span><span class="sig-name descname"><span class="pre">Subject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">experiment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">raw_fname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ica_applied</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rereferenced</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.subject.Subject" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The class for holding subject-specific information
+and subject-specific data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>experiment</strong> (<a class="reference internal" href="#meggie.experiment.Experiment" title="meggie.experiment.Experiment"><em>meggie.experiment.Experiment</em></a>) – The experiment to which the subject is created.</p></li>
+<li><p><strong>name</strong> (<em>str</em>) – Name of the subject.</p></li>
+<li><p><strong>raw_fname</strong> (<em>str</em>) – Path to the subject data.</p></li>
+<li><p><strong>ica_applied</strong> (<em>bool</em>) – Whether ICA has been applied (at least once) to this data.</p></li>
+<li><p><strong>rereferenced</strong> (<em>bool</em>) – Whether the data has been rereferenced (at least once).</p></li>
+</ul>
+</dd>
+</dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="meggie.subject.Subject.add">
 <span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataobject</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datatype</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.subject.Subject.add" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Adds a dataobject of type datatype to the subject.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dataobject</strong> (<em>instance of a datatype</em>) – A data object.</p></li>
+<li><p><strong>datatype</strong> (<em>str</em>) – Name of the datatype.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="meggie.subject.Subject.ensure_folders">
 <span class="sig-name descname"><span class="pre">ensure_folders</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#meggie.subject.Subject.ensure_folders" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>When called, checks that the subject folder with all datatype folders
+exist and if not, creates them.</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="meggie.subject.Subject.get_raw">
 <span class="sig-name descname"><span class="pre">get_raw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">preload</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'info'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.subject.Subject.get_raw" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Gets the raw object for the subject.</p>
+<p>Reads from the file system if not in the memory already.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>preload</strong> (<em>bool</em>) – Whether to read the data or only the metadata.</p></li>
+<li><p><strong>verbose</strong> (<em>str</em>) – Verbose level of read_raw.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The raw object.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>mne.io.Raw</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="meggie.subject.Subject.raw_path">
 <em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">raw_path</span></span><a class="headerlink" href="#meggie.subject.Subject.raw_path" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Returns the raw path.</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="meggie.subject.Subject.release_memory">
 <span class="sig-name descname"><span class="pre">release_memory</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#meggie.subject.Subject.release_memory" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Releases data from the memory.</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="meggie.subject.Subject.remove">
 <span class="sig-name descname"><span class="pre">remove</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datatype</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.subject.Subject.remove" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Removes a dataobject by name from the subject.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>) – Name of the data object.</p></li>
+<li><p><strong>datatype</strong> (<em>str</em>) – Name of the datatype.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="meggie.subject.Subject.save">
 <span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#meggie.subject.Subject.save" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Saves the data to the existing path.</p>
+</dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="meggie.subject.Subject.sss_applied">
 <em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">sss_applied</span></span><a class="headerlink" href="#meggie.subject.Subject.sss_applied" title="Permalink to this definition">¶</a></dt>
-<dd><p>Checks the subject folder for sss/tsss applied file.
-Returns True if sss/tsss found.</p>
+<dd><p>Checks if sss applied.</p>
 </dd></dl>
 
 </dd></dl>
