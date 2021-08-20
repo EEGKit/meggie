@@ -4,6 +4,14 @@ meggie.utilities.dialogs package
 Submodules
 ----------
 
+meggie.utilities.dialogs.TFROutputOptionsMain module
+----------------------------------------------------
+
+.. automodule:: meggie.utilities.dialogs.TFROutputOptionsMain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 meggie.utilities.dialogs.bitSelectionDialogMain module
 ------------------------------------------------------
 
@@ -24,14 +32,6 @@ meggie.utilities.dialogs.outputOptionsMain module
 -------------------------------------------------
 
 .. automodule:: meggie.utilities.dialogs.outputOptionsMain
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-meggie.utilities.dialogs.permutationTestDialogMain module
----------------------------------------------------------
-
-.. automodule:: meggie.utilities.dialogs.permutationTestDialogMain
    :members:
    :undoc-members:
    :show-inheritance:
@@ -64,6 +64,14 @@ meggie.utilities.dialogs.shortQuestionBoxMain module
 ----------------------------------------------------
 
 .. automodule:: meggie.utilities.dialogs.shortQuestionBoxMain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+meggie.utilities.dialogs.simpleDialogMain module
+------------------------------------------------
+
+.. automodule:: meggie.utilities.dialogs.simpleDialogMain
    :members:
    :undoc-members:
    :show-inheritance:

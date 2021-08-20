@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>meggie.utilities.dialogs package &mdash; Meggie 1.1 documentation</title>
@@ -181,12 +182,28 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="meggie-utilities-dialogs-package">
+  <section id="meggie-utilities-dialogs-package">
 <h1>meggie.utilities.dialogs package<a class="headerlink" href="#meggie-utilities-dialogs-package" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="submodules">
+<section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-meggie.utilities.dialogs.bitSelectionDialogMain">
+</section>
+<section id="module-meggie.utilities.dialogs.TFROutputOptionsMain">
+<span id="meggie-utilities-dialogs-tfroutputoptionsmain-module"></span><h2>meggie.utilities.dialogs.TFROutputOptionsMain module<a class="headerlink" href="#module-meggie.utilities.dialogs.TFROutputOptionsMain" title="Permalink to this headline">¶</a></h2>
+<p>Contains a class for the tfr output options dialog.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="meggie.utilities.dialogs.TFROutputOptionsMain.TFROutputOptions">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">meggie.utilities.dialogs.TFROutputOptionsMain.</span></span><span class="sig-name descname"><span class="pre">TFROutputOptions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">experiment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tfr_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">handler</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ask_condition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.utilities.dialogs.TFROutputOptionsMain.TFROutputOptions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QDialog</span></code></p>
+<p>Contains logic for the tfr output options dialog.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.utilities.dialogs.TFROutputOptionsMain.TFROutputOptions.accept">
+<span class="sig-name descname"><span class="pre">accept</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.utilities.dialogs.TFROutputOptionsMain.TFROutputOptions.accept" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-meggie.utilities.dialogs.bitSelectionDialogMain">
 <span id="meggie-utilities-dialogs-bitselectiondialogmain-module"></span><h2>meggie.utilities.dialogs.bitSelectionDialogMain module<a class="headerlink" href="#module-meggie.utilities.dialogs.bitSelectionDialogMain" title="Permalink to this headline">¶</a></h2>
 <p>Contains a class for logic of the bit selection dialog.</p>
 <dl class="py class">
@@ -201,8 +218,8 @@
 
 </dd></dl>
 
-</div>
-<div class="section" id="module-meggie.utilities.dialogs.groupSelectionDialogMain">
+</section>
+<section id="module-meggie.utilities.dialogs.groupSelectionDialogMain">
 <span id="meggie-utilities-dialogs-groupselectiondialogmain-module"></span><h2>meggie.utilities.dialogs.groupSelectionDialogMain module<a class="headerlink" href="#module-meggie.utilities.dialogs.groupSelectionDialogMain" title="Permalink to this headline">¶</a></h2>
 <p>Contains a class for logic of the group selection dialog.</p>
 <dl class="py class">
@@ -217,8 +234,8 @@
 
 </dd></dl>
 
-</div>
-<div class="section" id="module-meggie.utilities.dialogs.outputOptionsMain">
+</section>
+<section id="module-meggie.utilities.dialogs.outputOptionsMain">
 <span id="meggie-utilities-dialogs-outputoptionsmain-module"></span><h2>meggie.utilities.dialogs.outputOptionsMain module<a class="headerlink" href="#module-meggie.utilities.dialogs.outputOptionsMain" title="Permalink to this headline">¶</a></h2>
 <p>Contains a class for logic of the output options dialog.</p>
 <dl class="py class">
@@ -233,29 +250,8 @@
 
 </dd></dl>
 
-</div>
-<div class="section" id="module-meggie.utilities.dialogs.permutationTestDialogMain">
-<span id="meggie-utilities-dialogs-permutationtestdialogmain-module"></span><h2>meggie.utilities.dialogs.permutationTestDialogMain module<a class="headerlink" href="#module-meggie.utilities.dialogs.permutationTestDialogMain" title="Permalink to this headline">¶</a></h2>
-<p>Contains a class for logic of the permutation test dialog.</p>
-<dl class="py class">
-<dt class="sig sig-object py" id="meggie.utilities.dialogs.permutationTestDialogMain.PermutationTestDialog">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">meggie.utilities.dialogs.permutationTestDialogMain.</span></span><span class="sig-name descname"><span class="pre">PermutationTestDialog</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">experiment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">handler</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meggie_item</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit_frequency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit_channel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.utilities.dialogs.permutationTestDialogMain.PermutationTestDialog" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QDialog</span></code></p>
-<p>Contains logic for the permutation test dialog.</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="meggie.utilities.dialogs.permutationTestDialogMain.PermutationTestDialog.accept">
-<span class="sig-name descname"><span class="pre">accept</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.utilities.dialogs.permutationTestDialogMain.PermutationTestDialog.accept" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="meggie.utilities.dialogs.permutationTestDialogMain.PermutationTestDialog.on_pushButtonGroups_clicked">
-<span class="sig-name descname"><span class="pre">on_pushButtonGroups_clicked</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.utilities.dialogs.permutationTestDialogMain.PermutationTestDialog.on_pushButtonGroups_clicked" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-</div>
-<div class="section" id="module-meggie.utilities.dialogs.powerSpectrumAddAdvancedDialogMain">
+</section>
+<section id="module-meggie.utilities.dialogs.powerSpectrumAddAdvancedDialogMain">
 <span id="meggie-utilities-dialogs-powerspectrumaddadvanceddialogmain-module"></span><h2>meggie.utilities.dialogs.powerSpectrumAddAdvancedDialogMain module<a class="headerlink" href="#module-meggie.utilities.dialogs.powerSpectrumAddAdvancedDialogMain" title="Permalink to this headline">¶</a></h2>
 <p>Contains a class for logic of the add advanced dialog.</p>
 <dl class="py class">
@@ -280,8 +276,8 @@
 
 </dd></dl>
 
-</div>
-<div class="section" id="module-meggie.utilities.dialogs.powerSpectrumDialogMain">
+</section>
+<section id="module-meggie.utilities.dialogs.powerSpectrumDialogMain">
 <span id="meggie-utilities-dialogs-powerspectrumdialogmain-module"></span><h2>meggie.utilities.dialogs.powerSpectrumDialogMain module<a class="headerlink" href="#module-meggie.utilities.dialogs.powerSpectrumDialogMain" title="Permalink to this headline">¶</a></h2>
 <p>Contains a class for logic of the power spectrum creation dialog.</p>
 <dl class="py class">
@@ -327,8 +323,8 @@
 
 </dd></dl>
 
-</div>
-<div class="section" id="module-meggie.utilities.dialogs.shortMessageBoxMain">
+</section>
+<section id="module-meggie.utilities.dialogs.shortMessageBoxMain">
 <span id="meggie-utilities-dialogs-shortmessageboxmain-module"></span><h2>meggie.utilities.dialogs.shortMessageBoxMain module<a class="headerlink" href="#module-meggie.utilities.dialogs.shortMessageBoxMain" title="Permalink to this headline">¶</a></h2>
 <p>Contains a class for logic of the short message box.</p>
 <dl class="py class">
@@ -338,8 +334,8 @@
 <p>Contains logic for the short message box.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="module-meggie.utilities.dialogs.shortQuestionBoxMain">
+</section>
+<section id="module-meggie.utilities.dialogs.shortQuestionBoxMain">
 <span id="meggie-utilities-dialogs-shortquestionboxmain-module"></span><h2>meggie.utilities.dialogs.shortQuestionBoxMain module<a class="headerlink" href="#module-meggie.utilities.dialogs.shortQuestionBoxMain" title="Permalink to this headline">¶</a></h2>
 <p>Contains a class for logic of the short question box.</p>
 <dl class="py class">
@@ -359,8 +355,29 @@
 
 </dd></dl>
 
-</div>
-<div class="section" id="module-meggie.utilities.dialogs.singleChannelDialogMain">
+</section>
+<section id="module-meggie.utilities.dialogs.simpleDialogMain">
+<span id="meggie-utilities-dialogs-simpledialogmain-module"></span><h2>meggie.utilities.dialogs.simpleDialogMain module<a class="headerlink" href="#module-meggie.utilities.dialogs.simpleDialogMain" title="Permalink to this headline">¶</a></h2>
+<p>Handles the logic of simple reusable dialogs</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="meggie.utilities.dialogs.simpleDialogMain.SimpleDialog">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">meggie.utilities.dialogs.simpleDialogMain.</span></span><span class="sig-name descname"><span class="pre">SimpleDialog</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">experiment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">handler</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batching</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Simple</span> <span class="pre">dialog'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.utilities.dialogs.simpleDialogMain.SimpleDialog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QDialog</span></code></p>
+<p>Contains logic for simple reusable dialog.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.utilities.dialogs.simpleDialogMain.SimpleDialog.accept">
+<span class="sig-name descname"><span class="pre">accept</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meggie.utilities.dialogs.simpleDialogMain.SimpleDialog.accept" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="meggie.utilities.dialogs.simpleDialogMain.SimpleDialog.acceptBatch">
+<span class="sig-name descname"><span class="pre">acceptBatch</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#meggie.utilities.dialogs.simpleDialogMain.SimpleDialog.acceptBatch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-meggie.utilities.dialogs.singleChannelDialogMain">
 <span id="meggie-utilities-dialogs-singlechanneldialogmain-module"></span><h2>meggie.utilities.dialogs.singleChannelDialogMain module<a class="headerlink" href="#module-meggie.utilities.dialogs.singleChannelDialogMain" title="Permalink to this headline">¶</a></h2>
 <p>Contains a class for logic of the single channel plot dialog.</p>
 <dl class="py class">
@@ -380,11 +397,11 @@
 
 </dd></dl>
 
-</div>
-<div class="section" id="module-meggie.utilities.dialogs">
+</section>
+<section id="module-meggie.utilities.dialogs">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-meggie.utilities.dialogs" title="Permalink to this headline">¶</a></h2>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

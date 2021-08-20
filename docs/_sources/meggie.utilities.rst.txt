@@ -45,14 +45,6 @@ meggie.utilities.debug module
    :undoc-members:
    :show-inheritance:
 
-meggie.utilities.decorators module
-----------------------------------
-
-.. automodule:: meggie.utilities.decorators
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 meggie.utilities.events module
 ------------------------------
 
@@ -117,18 +109,18 @@ meggie.utilities.plotting module
    :undoc-members:
    :show-inheritance:
 
-meggie.utilities.smooth module
-------------------------------
+meggie.utilities.threading module
+---------------------------------
 
-.. automodule:: meggie.utilities.smooth
+.. automodule:: meggie.utilities.threading
    :members:
    :undoc-members:
    :show-inheritance:
 
-meggie.utilities.stats module
------------------------------
+meggie.utilities.uid module
+---------------------------
 
-.. automodule:: meggie.utilities.stats
+.. automodule:: meggie.utilities.uid
    :members:
    :undoc-members:
    :show-inheritance:
