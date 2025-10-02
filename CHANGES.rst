@@ -1,10 +1,16 @@
 Changelog
 =========
 
-1.9.5 (unreleased)
+1.10.1 (unreleased)
 ------------------
 
 - nothing changed yet.
+
+
+1.10.0 (unreleased)
+------------------
+
+- Add epochs_save action to both get epochs data out more easily and to allow channel average outputs.
 
 1.9.4 (2025-08-21)
 ------------------
