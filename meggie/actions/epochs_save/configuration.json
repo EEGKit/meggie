@@ -1,0 +1,6 @@
+{
+    "id": "epochs_save",
+    "name": "Save to csv",
+    "entry": "SaveEpochs",
+    "description": "Export the numerical data from the epochs object for all matching subjects into a CSV file."
+}
